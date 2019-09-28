@@ -2,6 +2,11 @@
 
 * [Introduction](README.md)
 
+## SECURITY
+
+* [Encryption](security/encryption.md)
+* [SSH](security/ssh.md)
+
 ## DevOps
 
 * [Deploy on Heroku](devops/deploy-on-heroku.md)
