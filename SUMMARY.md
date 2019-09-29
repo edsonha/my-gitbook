@@ -11,6 +11,10 @@
 
 * [Deploy on Heroku](devops/deploy-on-heroku.md)
 
+## DATA STRUCTURE & ALGORITHM
+
+* [Big O](data-structure-and-algorithm/big-o.md)
+
 ## Cheatsheet <a id="git"></a>
 
 * [Guide](git/guide.md)

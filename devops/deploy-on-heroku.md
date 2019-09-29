@@ -1,7 +1,3 @@
----
-description: How to deploy your front-end and back-end code to Heroku?
----
-
 # Deploy on Heroku
 
 ## Deploy React App on Heroku
