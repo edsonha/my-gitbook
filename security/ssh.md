@@ -50,7 +50,7 @@ Add your SSH private key to the SSH-Agent
 $ ssh-add ~/.ssh/id_rsa_github
 ```
 
-To check and delete identities associated with the agent
+To check and delete identities associated with the SSH-Agent
 
 ```
 $ ssh-add -l  => List all identity
@@ -60,9 +60,7 @@ $ ssh-add -D  => Delete all identity
 Add SSH key to the github account, under "Setting =&gt; SSH and GPG keys"
 
 ```
-$ ssh-add ~/.ssh/id_rsa_github
-
-clip < ~/.ssh/id_rsa_github
+$ clip < ~/.ssh/id_rsa_github
 ```
 
 Testing your SSH connection
