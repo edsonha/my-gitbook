@@ -17,6 +17,7 @@
 
 ## Cheatsheet <a id="git"></a>
 
+* [GIT](git/git.md)
 * [Guide](git/guide.md)
 * [API](git/api.md)
 * [FAQ](git/faq.md)
