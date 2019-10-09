@@ -14,6 +14,8 @@
 ## DATA STRUCTURE & ALGORITHM
 
 * [Big O](data-structure-and-algorithm/big-o.md)
+* [Data Structure](data-structure-and-algorithm/data-structure.md)
+* [Array](data-structure-and-algorithm/array.md)
 
 ## Cheatsheet <a id="git"></a>
 
