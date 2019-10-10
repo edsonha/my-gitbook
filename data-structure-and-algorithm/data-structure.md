@@ -1,6 +1,6 @@
 # Data Structure
 
-Data structure is a collection of values, organized for our usage. Each data structure is good and is specialized for its own thing. For example, in real world, we have bag to store book, we have fridge to store, etc
+Data structure is a collection of values, organized for our usage. Each data structure is good and is specialized for its own thing. For example, in real world, we have bag to store books, we have fridge to store foods, etc
 
 * Arrays
 * Stacks

@@ -1,6 +1,17 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [BASIC](README.md)
+* [Dot Notation vs Bracket Notation](dot-notation-vs-bracket-notation.md)
+
+## Object Oriented Programming \(OOP\)
+
+* [Class - Instantiation](object-oriented-programming-oop/class.md)
+
+## DATA STRUCTURE & ALGORITHM
+
+* [Big O](data-structure-and-algorithm/big-o.md)
+* [Data Structure](data-structure-and-algorithm/data-structure.md)
+* [Array](data-structure-and-algorithm/array.md)
 
 ## SECURITY
 
@@ -10,12 +21,6 @@
 ## DevOps
 
 * [Deploy on Heroku](devops/deploy-on-heroku.md)
-
-## DATA STRUCTURE & ALGORITHM
-
-* [Big O](data-structure-and-algorithm/big-o.md)
-* [Data Structure](data-structure-and-algorithm/data-structure.md)
-* [Array](data-structure-and-algorithm/array.md)
 
 ## Cheatsheet <a id="git"></a>
 
