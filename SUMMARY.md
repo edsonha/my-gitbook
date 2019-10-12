@@ -2,6 +2,7 @@
 
 * [BASIC](README.md)
 * [Dot Notation vs Bracket Notation](dot-notation-vs-bracket-notation.md)
+* [Miscellaneous](miscellaneous.md)
 
 ## Object Oriented Programming \(OOP\)
 
@@ -12,6 +13,7 @@
 * [Big O](data-structure-and-algorithm/big-o.md)
 * [Data Structure](data-structure-and-algorithm/data-structure.md)
 * [Array](data-structure-and-algorithm/array.md)
+* [Hash Table](data-structure-and-algorithm/hash-table-object.md)
 
 ## SECURITY
 
