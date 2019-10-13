@@ -14,6 +14,7 @@
 * [Data Structure](data-structure-and-algorithm/data-structure.md)
 * [Array](data-structure-and-algorithm/array.md)
 * [Hash Table](data-structure-and-algorithm/hash-table-object.md)
+* [Linked List](data-structure-and-algorithm/linked-list.md)
 
 ## SECURITY
 
