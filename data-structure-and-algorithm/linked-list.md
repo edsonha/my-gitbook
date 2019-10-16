@@ -24,3 +24,34 @@ What is the difference between linked list and hash table?
 
 1. The one advantage linked list is there is some sort of order . Each node points to the next node.
 
+What is Double Linked List?
+
+It is similar to Single Linked List except it has links to the node before it \(previous\) and this allows us to traverse our list backwards. So, if we know which half of the list we are looking for, we can pick the optimum place to start. 
+
+Pro of Single Linked List vs Double Linked List
+
+1. Less memory \(as there is no data pointing to previous node\), so with less memory, it is technically faster to do things like insert and delete. VS Double Linked List has higher space complexity as it hold little bit more memory by pointing to the previous node
+2. Simpler to implement compared to Double Linked List
+
+Pro of Double Linked List vs Single Linked List
+
+1. Can be traverse form the back VS Single Linked List that can only be done from the front
+2. With Single Linked List, as there is no reference to previous Node, if we were to lose the reference, it will be lost in memory. So Single Linked List is appropriate to use when you have less memory
+3. Better search operation as you can search backwards instead of just forward
+
+In general, Linked list has these advantages:
+
+1. Fast insertion - compared to array, there is no need to shift index
+2. Fast deletion 
+3. Ordered - no random insertion
+4. Flexible size - Can be added. If we keep adding to items to the array, eventually it will copy the array in memory and double up the space when it reaches the limit to create a larger array
+
+And the disadvantages are:
+
+1. Slow lookup - there's no random access in the sense that when looking for something you have to actually traverse the list
+2. More memory - create node which hold value and pointer
+
+
+
+
+
