@@ -15,21 +15,22 @@
 * [Array](data-structure-and-algorithm/array.md)
 * [Hash Table](data-structure-and-algorithm/hash-table-object.md)
 * [Linked List](data-structure-and-algorithm/linked-list.md)
+* [Queue and Stack](data-structure-and-algorithm/queue-and-stack.md)
 
 ## SECURITY
 
 * [Encryption](security/encryption.md)
 * [SSH](security/ssh.md)
 
-## DevOps
-
-* [Deploy on Heroku](devops/deploy-on-heroku.md)
-
 ## Cheatsheet <a id="git"></a>
 
 * [GIT](git/git.md)
-* [Guide](git/guide.md)
-* [API](git/api.md)
-* [FAQ](git/faq.md)
-* [ChangeLog](git/changelog.md)
+
+## Writing Template
+
+* [Guide](writing-template/guide.md)
+* [API](writing-template/api.md)
+* [ChangeLog](writing-template/changelog.md)
+* [FAQ](writing-template/faq.md)
+* [Untitled](writing-template/untitled.md)
 
