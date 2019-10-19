@@ -13,12 +13,12 @@ Advantages of Hash Table
 
 1. Fast lookup\* Good collision resolution needed
 2. Fast insert - It is un-ordered thus we do not have to shift indexes like arrays
-3. Flexible keys
+3. Flexible keys - unlike array, where it is indexed from 0, 1, 2... etc
 
 Downside
 
 1. Un-ordered - there is nothing to tell the hash function to evenly distribute data in the memory spaces. So there is a possibility of collision \(see picture\)
-2. Slow key iteration - have to loop the entire memory space in order to find the keys VS array that just loop only the length of an array. If it has 3 keys, it would have looped over 3 times only
+2. Slow key iteration - if you want to get all the keys, you have to loop the entire memory space \(if you allocate 50 as size, but put only 3 items, you have to loop the whole length of 50\) VS array that just loop only the length of an array. If it has 3 keys, it would have looped over 3 times only
 
 Collision - when you have collision, it slows down reading and inserting with a hash table, O\(n\) because if we have many data in one address space, we have to loop. One way to deal with collision is linked-list
 
