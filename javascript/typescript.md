@@ -2,7 +2,7 @@
 
 Typescript \(Static Type\) is a super set of vanilla JS \(Dynamic Type\), meaning it build on top of JS and has more features like types, classes and interfaces.
 
-In static typed language, we have to declare the variable explicitly before using them.  Examples of types: string, number, boolean, Array&lt;string&gt;, void , enums, any.
+In static typed language, we have to declare the variable explicitly before using them.  Examples of types: string, number, boolean, Array&lt;string&gt;, object, null, undefined, void , enums, any.
 
 ```
 let myString: string     
@@ -18,7 +18,7 @@ let yetAnotherString
 Pros of static typing:
 
 1. We get self-documentation. In a project where the function is badly named or if it is a complicate function, we can immediately see what kind of parameter it expects and avoid making typing error
-2. You are going to get less bugs, in regards to types
+2. You are going to get less bugs, in regards to types. It catches errors at compile time and the code will not make it into production
 3. This features helps with the auto completion in your IDE which in a way helps your development
 
 Cons of static typing:
