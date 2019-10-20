@@ -6,7 +6,8 @@
 
 ## JAVASCRIPT
 
-* [Typescript](javascript/typescript.md)
+* [Typescript](javascript/typescript/README.md)
+  * [Examples of Types](javascript/typescript/examples-of-types.md)
 
 ## Object Oriented Programming \(OOP\)
 

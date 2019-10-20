@@ -1,7 +1,3 @@
----
-description: Make a copy of an object and reuse the code
----
-
 # Class - Instantiation
 
     class Player {

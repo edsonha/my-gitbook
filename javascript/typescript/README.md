@@ -33,7 +33,7 @@ Strong vs Weak Type
 
 There is a confusion of mixed up between Static Type and Strong Type VS Dynamic Type and Weak Type.
 
-![](../.gitbook/assets/programming-language.jpg)
+![](../../.gitbook/assets/programming-language.jpg)
 
 ```
 //Weak Type (example of type coercion in JS)
