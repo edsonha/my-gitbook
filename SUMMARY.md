@@ -4,6 +4,10 @@
 * [Dot Notation vs Bracket Notation](dot-notation-vs-bracket-notation.md)
 * [Miscellaneous](miscellaneous.md)
 
+## JAVASCRIPT
+
+* [Typescript](javascript/typescript.md)
+
 ## Object Oriented Programming \(OOP\)
 
 * [Class - Instantiation](object-oriented-programming-oop/class.md)
@@ -32,5 +36,4 @@
 * [API](writing-template/api.md)
 * [ChangeLog](writing-template/changelog.md)
 * [FAQ](writing-template/faq.md)
-* [Untitled](writing-template/untitled.md)
 
