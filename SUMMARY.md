@@ -1,6 +1,7 @@
 # Table of contents
 
 * [My GitBook](README.md)
+* [This](this.md)
 * [Dot Notation vs Bracket Notation](dot-notation-vs-bracket-notation.md)
 * [Miscellaneous](miscellaneous.md)
 
