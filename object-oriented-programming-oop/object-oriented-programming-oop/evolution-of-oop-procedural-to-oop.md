@@ -131,7 +131,10 @@ class Elf {
 const fiona = new Elf("Fiona", "ninja stars");
 console.log(fiona instanceof Elf); // true
 const ben = new Elf("Ben", "bow");
-fiona.attack();
-
+fiona.attack(); //atack with ninja stars
 ```
+
+Why don't you put attack inside the constructor? Because when you create an object using the keyword "new", the constructor get run each time. Since the name and weapon are unique to each elf and attack method is shared by all elf, we move it out from the constructor so not to take up memory space.
+
+So this Class is the closest to object oriented programming in JavaScript. Why is that? Because this is what we call synthetic sugar. Underneath the hood, we are still using prototypal inheritance in JavaScript. We're not using classes like classes work in other languages. In Java and C++, classes are actual things. In JavaScript, classes are still just objects. Everything in Javascript is an object.
 
