@@ -20,7 +20,11 @@ Help to eliminate redundant code. The idea is to create a super-class \(Human Be
 
 Polymorphism
 
-"Many Form". Technique that get rid switch statement of if else statement
+It is the ability to call the same method on different objects and each object responding in different way. 
+
+But the idea of ability to appear in many forms that is we're simply doing method overwriting like this where the same method acts differently for each type of class. Or we can do method overloading which is adding extra features or extra parameters to a method to add on to what that method can do polymorphism in object oriented programming is that it has the ability to process object differently depending on their data type or class. Now because javascript is a dynamically typed language it actually limits the amount of polymorphism polymorphism is useful because we don't have to necessarily copy and paste code over and over. We can reuse some of the functionality from a superclass to adapt to our own specific needs and these
+
+
 
 Say we have a parent class and a few child classes which inherit from it. Sometimes we want to use a collection — for example a list — which contains a mix of all these classes. Or we have a method implemented for the parent class — but we’d like to use it for the children, too.
 
@@ -45,4 +49,81 @@ You can define it once and accept a `Figure` as an argument. Whether you pass a 
 ![](../../.gitbook/assets/4.jpg)
 
 
+
+```
+class Dog {
+  woof() {
+    console.log("i'm a dog, hear me woof!");
+  }
+}
+
+class Cat {
+  meow() {
+    console.log("i'm a cat, hear me meow!");
+  }
+}
+
+class Lion {
+  roar() {
+    console.log("i'm a lion, hear me roar!");
+  }
+}
+
+var dog = new Dog();
+var cat = new Cat();
+var lion = new Lion();
+var animals = [dog, cat, lion];
+
+// this for-loop shows how messy things can get when we don't design
+// our classes with polymorphism in mind.
+for (let i = 0; i < animals.length; i++) {
+  var currentAnimal = animals[i];
+  if (currentAnimal.constructor === Dog) {
+    currentAnimal.woof();
+  } else if (currentAnimal.constructor === Cat) {
+    currentAnimal.meow();
+  } else if (currentAnimal.constructor === Lion) {
+    currentAnimal.roar();
+  }
+}
+```
+
+
+
+```
+class Animal {
+  makeSound() {
+    // do nothing, because we actually can't implement this method.
+    // think about it. what sound does Animal make?
+  }
+}
+class Dog extends Animal {
+  makeSound() {
+    console.log("i'm a dog, hear me woof!");
+  }
+}
+
+class Cat extends Animal {
+  makeSound() {
+    console.log("i'm a cat, hear me meow!");
+  }
+}
+
+class Lion extends Animal {
+  makeSound() {
+    console.log("i'm a lion, hear me roar!");
+  }
+}
+
+var dog = new Dog();
+var cat = new Cat();
+var lion = new Lion();
+var animals = [dog, cat, lion];
+
+// Wow! polymorphism just made our life so much simpler!
+// Now we can scale nicely to a circus with many more types of animals with ease!
+for (let i = 0; i < this.animals.length; i++) {
+  this.animals[i].makeSound();
+}
+```
 
