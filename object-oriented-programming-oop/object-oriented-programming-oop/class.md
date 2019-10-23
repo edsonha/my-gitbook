@@ -33,3 +33,5 @@
 
 An instance happens when we call the class and we create an object out of this class with the "new" keyword. This process is called instantiation where we are instantiating from a class.
 
+When we "extends" \(inheritance\), in JS, we don't actually copy the functionality from super-class to subclass. Instead, it simply links up the prototype chain. So whenever it doesn't find something, lets say of the Wizard class, it is going to look up to the Player super-class. So it is creating this efficient linking or reference in JS using prototypal inheritance. In other language like Java and C++, it actually copy objects, so it is less in term of memory efficiency.
+

@@ -15,6 +15,7 @@
 * [Object Oriented Programming \(OOP\)](object-oriented-programming-oop/object-oriented-programming-oop/README.md)
   * [Evolution of OOP \(Procedural to OOP\)](object-oriented-programming-oop/object-oriented-programming-oop/evolution-of-oop-procedural-to-oop.md)
   * [Instantiation](object-oriented-programming-oop/object-oriented-programming-oop/class.md)
+  * [4 Pillars of OOP](object-oriented-programming-oop/object-oriented-programming-oop/4-pillars-of-oop.md)
 * [Functional Programming \(FP\)](object-oriented-programming-oop/functional-programming-fp.md)
 * [OOP vs FP](object-oriented-programming-oop/oop-vs-fp.md)
 
