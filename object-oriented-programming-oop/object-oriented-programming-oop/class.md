@@ -1,4 +1,4 @@
-# Class - Instantiation
+# Instantiation
 
     class Player {
       constructor(name, type) {
