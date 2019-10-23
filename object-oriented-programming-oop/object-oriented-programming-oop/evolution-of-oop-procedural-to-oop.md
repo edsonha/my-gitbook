@@ -88,3 +88,30 @@ const sam = createElf("Sam", "fire");
 sam.attack();
 ```
 
+Object.create creates a link between the elf-function-store and the new elf. So what we are essentially doing here is the true prototypal inheritance. However you won't see this out in most code bases. There was an old method that is even closer to the object oriented programming and that is using constructor function.
+
+```
+//A. Constructor Functions (Old)
+function Elf(name, weapon) {
+  this.name = name;
+  this.weapon = weapon;
+  var a = 5; //will not be attached to Elf because there is no "this"
+  
+  console.log("this", this);
+  //this -> Elf {name: "Sam", weapon: "fire"}
+  //this -> Elf {name: "Peter", weapon: "bow"}
+}
+
+Elf.prototype.attack = function() {
+  return "atack with " + this.weapon;
+};
+
+const sam = new Elf("Sam", "fire");
+console.log(sam.attack()); //attack with fire
+
+const peter = new Elf("Peter", "bow");
+console.log(peter.__proto__); //{attack: ƒ, constructor: ƒ}
+```
+
+In Elf.prototype.attack function, if we change it to arrow function, we will get undefined because arrow functions are lexical scoped. That is they defined "this" based on where they're read. And for above case, it is the global object who's calling attack right now. There's no object surrounding it other than the global object. But by using the regular function which is dynamically scoped that is it doesn't matter where it's written and it's about whoever calls it.
+
