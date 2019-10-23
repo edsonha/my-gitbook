@@ -115,3 +115,23 @@ console.log(peter.__proto__); //{attack: ƒ, constructor: ƒ}
 
 In Elf.prototype.attack function, if we change it to arrow function, we will get undefined because arrow functions are lexical scoped. That is they defined "this" based on where they're read. And for above case, it is the global object who's calling attack right now. There's no object surrounding it other than the global object. But by using the regular function which is dynamically scoped that is it doesn't matter where it's written and it's about whoever calls it.
 
+```
+//A. Constructor Functions (New)
+class Elf {
+  constructor(name, weapon) {
+    this.name = name;
+    this.weapon = weapon;
+  }
+  
+  attack() {
+    return "atack with " + this.weapon;
+  }
+}
+
+const fiona = new Elf("Fiona", "ninja stars");
+console.log(fiona instanceof Elf); // true
+const ben = new Elf("Ben", "bow");
+fiona.attack();
+
+```
+
