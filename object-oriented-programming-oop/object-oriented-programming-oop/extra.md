@@ -1,44 +1,42 @@
 # Extra
 
-```
-class Animal {
-  talk() {
-    console.log('?')
-  }
-}
+    class Animal {
+      talk() {
+        console.log("?");
+      }
+    }
 
-class Bird extends Animal {
-  talk() {
-    console.log('tweet tweet')
-  }
-  fly() {
-    console.log('flap flap')
-  }
-}
+    class Bird extends Animal {
+      talk() {
+        return `tweet tweet`;
+      }
+      fly() {
+        console.log("flap flap");
+      }
+    }
 
-class Parrot extends Bird {
-  state = {
-    happinness: 0
-  }
-  talk() {
-    console.log('polly want a cracker')
-  }
-  sing(loud) {
-    return (this.state.happinness += loud)
-  }
-}
+    class Parrot extends Bird {
+      state = {
+        happinness: 0
+      };
+      talk(item) {
+        console.log(`${super.talk()} with a ${item}`);
+      }
+      sing(loud) {
+        return (this.state.happinness += loud);
+      }
+    }
 
-var a = new Animal()
-var b = new Bird()
-var p = new Parrot()
+    var a = new Animal();
+    var b = new Bird();
+    var p = new Parrot();
 
-a.talk() //?
-b.talk() //tweet tweet
-b.fly() //flap flap
-p.talk() //polly want a cracker
-p.fly() //flap flap
-p.sing(50) //50
-```
+    a.talk(); //?
+    b.talk(); //tweet tweet
+    b.fly(); //flap flap
+    p.talk("cracker"); //tweet tweet with a cracker
+    p.fly(); //flap flap
+    p.sing(50); //50
 
 ```
 function createElf(name, weapon) {
