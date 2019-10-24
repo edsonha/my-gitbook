@@ -20,9 +20,7 @@ Help to eliminate redundant code. The idea is to create a super-class \(Human Be
 
 Polymorphism
 
-It is the ability to call the same method on different objects and each object responding in different way. 
-
-But the idea of ability to appear in many forms that is we're simply doing method overwriting like this where the same method acts differently for each type of class. Or we can do method overloading which is adding extra features or extra parameters to a method to add on to what that method can do polymorphism in object oriented programming is that it has the ability to process object differently depending on their data type or class. Now because javascript is a dynamically typed language it actually limits the amount of polymorphism polymorphism is useful because we don't have to necessarily copy and paste code over and over. We can reuse some of the functionality from a superclass to adapt to our own specific needs and these
+It is the ability to call the same method on different objects and each object responding in different way. We do this in 2 methods: Overwriting where the same method acts differently for each type of class and Overloading which is adding extra features or extra parameters to a method to add on to what the original method can do. Polymorphism gives us the ability to redefine methods for derived classes in allowing us to reuse some of the functionality but also customize methods to their own objects and classes. Thus, we don't have to necessarily copy and paste code over and over. We can reuse some of the functionality from a super-class to adapt to our own specific needs.
 
 
 
