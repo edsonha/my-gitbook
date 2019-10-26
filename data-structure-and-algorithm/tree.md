@@ -4,7 +4,7 @@ Trees are data structures that have hierarchical structure as opposed to somethi
 
 ![](../.gitbook/assets/tree.jpg)
 
-Binary Tree
+**Binary Tree**
 
 Each node can only have either 0, 1 or 2 nodes and each child can only have one parent. 3 child nodes is not considered as Binary Tree. So there are Perfect Binary Tree, meaning a tree that is completely full. That means there are no gaps in the tree, all the leaf nodes are full and there's no node that only has one child, a node either has zero or two children. And also the bottom layer of the tree is completely filled. Vs Full Binary Tree where the bottom layer is not completely filled.
 
@@ -25,7 +25,7 @@ Because total number of nodes is "2^height - 1" \(where height start from 1\). S
 
 So, the meaning of O\(log N\) is the choice of the next element on which to perform an action is one of several possibilities and only one needs to be chosen and not both. A good example is searching for telephone in phone book where we use divide and conquer method. So O\(log N\) is even better than O\(n\) as we don't need to check every single element.
 
-Binary Search Tree
+**Binary Search Tree**
 
 The most common tree data structure is Binary Search Tree. As the name suggests, it is really good at searching. It does not have to iterate in linear fashion of each node like an array, so it is faster. And how is this better than hash table is because BST preserves the relationships, just like your computer folders that have sub-folder ans so on. With hash table, it is unordered.
 
@@ -34,7 +34,7 @@ The rules of BST:
 1. All child nodes in the tree to the right of the root node must be greater than the current node. And vice versa for the left
 2. Each nodes can have up to 2 child nodes
 
-Balanced BST vs Unbalanced BST
+**Balanced BST vs Unbalanced BST**
 
 Imagine a situation where we keep adding nodes to the right. As we add more, the tree will become unbalanced and imagine them without the left portion, it will look like a linked list. So, all of sudden, when we want to search, insert and delete, we need to loop every single node as worst case scenario. Thus, it becomes
 
