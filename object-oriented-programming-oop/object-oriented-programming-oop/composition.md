@@ -4,7 +4,12 @@ Inheritance is when you design your types around what they are. Via inheritance.
 
 Composition is when you design your types around what they do.Via Composition. You can define the logic in a helper class and then whoever need that function can keep a reference to that helper and reuse it.
 
+Imagine we have two super-class: Robot and Animal. \(Left-Side\) How do we create Murder Robot Dog that can drive, kill, bark and not poop? \(Right-Side\) One way is to derive sub-class from Robot, but it will have unnecessary property and methods inherited.
+
+![](../../.gitbook/assets/untitled22.jpg)
+
 ```
+// Composition to the rescue
 const barker = state => ({
   bark: () => console.log("Woof, I am " + state.name)
 });

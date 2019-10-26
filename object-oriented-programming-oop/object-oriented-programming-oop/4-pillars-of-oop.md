@@ -4,7 +4,7 @@ Encapsulation
 
 Encapsulation is achieved when each object keeps its state **private**, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods. So, the object manages its own state via methods — and no other class can touch it unless explicitly allowed. If you want to communicate with the object, you should use the methods provided. But \(by default\), you can’t change the state. Here the “state” of the cat is the **private variables** `mood`, `hungry` and `energy`. It also has a private method `meow()`_._ It can call it whenever it wants, the other classes can’t tell the cat when to meow. What they can do is defined in the **public methods** `sleep()`, `play()` and `feed()`_._ Each of them modifies the internal state somehow and may invoke `meow()`_._ Thus, the binding between the private state and public methods is made.
 
-![](../../.gitbook/assets/1.jpg)
+![](../../.gitbook/assets/1%20%281%29.jpg)
 
 Abstraction
 
@@ -20,35 +20,14 @@ Help to eliminate redundant code. The idea is to create a super-class \(Human Be
 
 Polymorphism
 
-It is the ability to call the same method on different objects and each object responding in different way. We do this in 2 methods: Overwriting where the same method acts differently for each type of class and Overloading which is adding extra features or extra parameters to a method to add on to what the original method can do. Polymorphism gives us the ability to redefine methods for derived classes in allowing us to reuse some of the functionality but also customize methods to their own objects and classes. Thus, we don't have to necessarily copy and paste code over and over. We can reuse some of the functionality from a super-class to adapt to our own specific needs.
+It is the ability to call the same method on different objects and each object responding in different way. We do this in 2 methods: Overwriting where the same method acts differently for each type of class and Overloading which is adding extra features or extra parameters to a method to add on to what the original method can do. This typically happens by defining a \(parent\) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods. Thus, we don't have to necessarily copy and paste code over and over. We can reuse some of the functionality from a super-class to adapt to our own specific needs.
 
-
-
-Say we have a parent class and a few child classes which inherit from it. Sometimes we want to use a collection — for example a list — which contains a mix of all these classes. Or we have a method implemented for the parent class — but we’d like to use it for the children, too.
-
-This can be solved by using polymorphism.
-
-Simply put, polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types. But each child class keeps its own methods as they are.
-
-This typically happens by defining a \(parent\) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods.
-
-Any time a collection \(such as a list\) or a method expects an instance of the parent \(where common methods are outlined\), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed.
-
-Take a look at a sketch of geometric figures implementation. They reuse a common interface for calculating surface area and perimeter:
-
-Having these three figures inheriting the parent `Figure Interface` lets you create a list of mixed `triangles`, `circles`, and `rectangles`. And treat them like the same type of object.
-
-Then, if this list attempts to calculate the surface for an element, the correct method is found and executed. If the element is a triangle, triangle’s `CalculateSurface()` is called. If it’s a circle — then cirlce’s `CalculateSurface()` is called. And so on.
-
-If you have a function which operates with a figure by using its parameter, you don’t have to define it three times — once for a triangle, a circle, and a rectangle.
-
-You can define it once and accept a `Figure` as an argument. Whether you pass a triangle, circle or a rectangle — as long as they implement `CalculateParamter()`, their type doesn’t matter.
+Take a look at a sketch of geometric figures implementation. They reuse a common interface for calculating surface area and perimeter: Having these three figures inheriting the parent `Figure Interface` lets you create a list of mixed `triangles`, `circles`, and `rectangles`. And treat them like the same type of object. Then, if this list attempts to calculate the surface for an element, the correct method is found and executed. If the element is a triangle, triangle’s `CalculateSurface()` is called. If it’s a circle — then cirlce’s `CalculateSurface()` is called. And so on. If you have a function which operates with a figure by using its parameter, you don’t have to define it three times — once for a triangle, a circle, and a rectangle. You can define it once and accept a `Figure` as an argument. Whether you pass a triangle, circle or a rectangle — as long as they implement `CalculateParamter()`, their type doesn’t matter.
 
 ![](../../.gitbook/assets/4.jpg)
 
-
-
 ```
+// Without Polymorphism
 class Dog {
   woof() {
     console.log("i'm a dog, hear me woof!");
@@ -86,9 +65,8 @@ for (let i = 0; i < animals.length; i++) {
 }
 ```
 
-
-
 ```
+// With Polymorphism
 class Animal {
   makeSound() {
     // do nothing, because we actually can't implement this method.
