@@ -21,6 +21,7 @@
 * [Functional Programming \(FP\)](object-oriented-programming-oop/functional-programming-fp/README.md)
   * [Idempotent](object-oriented-programming-oop/functional-programming-fp/idempotent.md)
   * [Immutability](object-oriented-programming-oop/functional-programming-fp/immutability.md)
+  * [High Order Function and Closure](object-oriented-programming-oop/functional-programming-fp/high-order-function-and-closure.md)
   * [Imperative vs Declarative](object-oriented-programming-oop/functional-programming-fp/imperative-vs-declarative.md)
 * [OOP vs FP](object-oriented-programming-oop/oop-vs-fp.md)
 
