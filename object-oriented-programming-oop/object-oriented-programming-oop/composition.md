@@ -1,4 +1,4 @@
-# Composition
+# Composition \(Functional Programming\)
 
 Inheritance is when you design your types around what they are. Via inheritance. You can define the logic in a parent class and all children class can inherit it and reuse it.
 
