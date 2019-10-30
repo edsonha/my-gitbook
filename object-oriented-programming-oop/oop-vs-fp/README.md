@@ -8,3 +8,9 @@ The basis of FP is Closure and the basis for OOP is Prototypes.
 
 ![A superclass that is extended to smaller pieces that add or overwrite things.](../../.gitbook/assets/inheritance.jpg)
 
+| FP | OOP |
+| :---: | :---: |
+| Many different operation on fixed data | Few operation on common data |
+| Stateless - State is immutable | Stateful - State is modifiable |
+| Pure - No side effect | Side effect |
+
