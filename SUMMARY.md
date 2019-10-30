@@ -40,7 +40,9 @@
 * [Hash Table](data-structure-and-algorithm/hash-table-object.md)
 * [Linked List](data-structure-and-algorithm/linked-list.md)
 * [Queue and Stack](data-structure-and-algorithm/queue-and-stack.md)
-* [Tree](data-structure-and-algorithm/tree.md)
+* [Tree](data-structure-and-algorithm/tree/README.md)
+  * [Binary Heap](data-structure-and-algorithm/tree/binary-heap-priority-queue.md)
+  * [Trie](data-structure-and-algorithm/tree/trie.md)
 
 ## SECURITY
 

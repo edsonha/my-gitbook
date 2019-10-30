@@ -2,13 +2,13 @@
 
 Trees are data structures that have hierarchical structure as opposed to something like linked lists or arrays which are linear. But both linked list and tree use the same principle. They have nodes and these nodes can contain any type of information. Linked list is technically a type of tree, but with just one single path and it's linear - there's only one way to go from top to bottom VS tree that has multiple branches. Another difference is tree nodes can only point to a child, signifies as all the arrows point down. There's always one entry point which is the root, but nodes don't really have to reference their parent.
 
-![](../.gitbook/assets/tree.jpg)
+![](../../.gitbook/assets/tree.jpg)
 
 **Binary Tree**
 
 Each node can only have either 0, 1 or 2 nodes and each child can only have one parent. 3 child nodes is not considered as Binary Tree. So there are Perfect Binary Tree, meaning a tree that is completely full. That means there are no gaps in the tree, all the leaf nodes are full and there's no node that only has one child, a node either has zero or two children. And also the bottom layer of the tree is completely filled. Vs Full Binary Tree where the bottom layer is not completely filled.
 
-![](../.gitbook/assets/untitledee.jpg)
+![](../../.gitbook/assets/untitledee.jpg)
 
 Perfect Binary Tree is desirable as it is really efficient. So it has 2 properties:
 
@@ -58,4 +58,8 @@ In summary, here are the pro and con of BST
 Comparison with Hash Table:
 
 * Although hash table has O\(1\) for insert and search, BST has sorted data and we have the relationship
+
+**AVL Tree and Red Black Tree**
+
+Using AVL Tree or Red Black Tree, we can automatically rebalance our tree, so that we don't have those edge cases where our balanced tree turns into a linear unbalanced tree.
 
