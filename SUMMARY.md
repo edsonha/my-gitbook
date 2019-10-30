@@ -17,7 +17,6 @@
   * [Evolution of OOP \(Procedural to OOP\)](object-oriented-programming-oop/object-oriented-programming-oop/evolution-of-oop-procedural-to-oop.md)
   * [Instantiation](object-oriented-programming-oop/object-oriented-programming-oop/class.md)
   * [4 Pillars of OOP](object-oriented-programming-oop/object-oriented-programming-oop/4-pillars-of-oop.md)
-  * [Composition \(Functional Programming\)](object-oriented-programming-oop/object-oriented-programming-oop/composition.md)
   * [Extra](object-oriented-programming-oop/object-oriented-programming-oop/extra.md)
 * [Functional Programming \(FP\)](object-oriented-programming-oop/functional-programming-fp/README.md)
   * [Idempotent](object-oriented-programming-oop/functional-programming-fp/idempotent.md)
@@ -30,7 +29,8 @@
   * [Compose and Pipe](object-oriented-programming-oop/functional-programming-fp/compose-and-pipe.md)
   * [Extra](object-oriented-programming-oop/functional-programming-fp/extra.md)
   * [Example of FP](object-oriented-programming-oop/functional-programming-fp/example-of-fp.md)
-* [OOP vs FP](object-oriented-programming-oop/oop-vs-fp.md)
+* [OOP vs FP](object-oriented-programming-oop/oop-vs-fp/README.md)
+  * [Composition vs Inheritance](object-oriented-programming-oop/oop-vs-fp/composition.md)
 
 ## DATA STRUCTURE & ALGORITHM
 

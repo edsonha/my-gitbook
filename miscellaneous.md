@@ -25,5 +25,27 @@ b.toString();
 
 in JavaScript, when we assign variable, internally it's going to construct the Number object so that we have access to all these methods and that's how we can use things like to fixed or to string. Technically in JavaScript everything is an object with constructor function and methods, except for null and undefined
 
-## 4.
+## 4. Returning Object Literals
+
+```
+var func = () => { foo: 1 };
+// Calling func() returns undefined!
+
+var func = () => ({ foo: 1 });
+// Calling func() returns { foo:1 }
+```
+
+## 5. 
+
+```
+
+```
+
+## 6.
+
+```
+
+```
+
+
 
