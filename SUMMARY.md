@@ -1,14 +1,15 @@
 # Table of contents
 
 * [My GitBook](README.md)
-* [This](this.md)
-* [Dot Notation vs Bracket Notation](dot-notation-vs-bracket-notation.md)
 * [Miscellaneous](miscellaneous.md)
 
 ## JAVASCRIPT
 
 * [Typescript](javascript/typescript/README.md)
   * [Examples of Types](javascript/typescript/examples-of-types.md)
+* [This](javascript/this.md)
+* [Dot Notation vs Bracket Notation](javascript/dot-notation-vs-bracket-notation.md)
+* [Shallow vs Deep Clone](javascript/shallow-vs-deep-clone.md)
 
 ## Programming Paradigms <a id="object-oriented-programming-oop"></a>
 
