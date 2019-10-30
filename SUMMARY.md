@@ -29,6 +29,7 @@
   * [Memoization and Caching](object-oriented-programming-oop/functional-programming-fp/memoization-and-caching.md)
   * [Compose and Pipe](object-oriented-programming-oop/functional-programming-fp/compose-and-pipe.md)
   * [Extra](object-oriented-programming-oop/functional-programming-fp/extra.md)
+  * [Example of FP](object-oriented-programming-oop/functional-programming-fp/example-of-fp.md)
 * [OOP vs FP](object-oriented-programming-oop/oop-vs-fp.md)
 
 ## DATA STRUCTURE & ALGORITHM
