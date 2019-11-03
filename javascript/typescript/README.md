@@ -54,3 +54,5 @@ TS is growing well and big part of that is because Angular is using TS. Why is t
 
 TS need a compiler that turn our TS code into JS and this compiler needs to run somewhere and it need to have an environment, like Node. For being able to run JS because Node has JS engine \(Remember that JS is browser language\) that is V8 engine, same engine that Chrome has to read our JS and understand it
 
+**How do we create TS project with React?** [**Here**](https://create-react-app.dev/docs/adding-typescript/)\*\*\*\*
+
