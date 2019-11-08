@@ -32,7 +32,7 @@
 * [OOP vs FP](object-oriented-programming-oop/oop-vs-fp/README.md)
   * [Composition vs Inheritance](object-oriented-programming-oop/oop-vs-fp/composition.md)
 
-## DATA STRUCTURE & ALGORITHM
+## DATA STRUCTURE <a id="data-structure-and-algorithm"></a>
 
 * [Big O](data-structure-and-algorithm/big-o.md)
 * [Data Structure](data-structure-and-algorithm/data-structure.md)
@@ -47,7 +47,8 @@
 
 ## Algorithms
 
-* [Untitled](algorithms/untitled.md)
+* [Recursion](algorithms/untitled/README.md)
+  * [Factorial and Fibonacci](algorithms/untitled/factorial-and-fibonacci.md)
 
 ## SECURITY
 
