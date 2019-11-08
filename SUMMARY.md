@@ -48,7 +48,7 @@
 ## Algorithms
 
 * [Recursion](algorithms/untitled/README.md)
-  * [Factorial and Fibonacci](algorithms/untitled/factorial-and-fibonacci.md)
+  * [Examples of Recursion](algorithms/untitled/factorial-and-fibonacci.md)
 
 ## SECURITY
 

@@ -1,4 +1,4 @@
-# Factorial and Fibonacci
+# Examples of Recursion
 
 ```text
 // Factorial
@@ -49,5 +49,27 @@ function fibonacciRecursive(n) {
 }
 
 fibonacciRecursive(8); //21
+```
+
+```text
+//Implement a function that reverses a string 
+function reverseString(str) { 
+    const splitString = str.split(""); 
+    let answer = ""; 
+    for (let i = splitString.length - 1; i >= 0; i--) { 
+        answer = answer + splitString[i]; 
+    } 
+    return answer; 
+}
+reverseString("yoyo mastery"); //'yretsam oyoy'
+
+function reverseStringRecursive(str) { 
+    if (str === "") { 
+        return ""; 
+    } else { 
+        return reverseStringRecursive(str.substr(1)) + str.charAt(0); 
+    } 
+}
+reverseStringRecursive("yoyo master");
 ```
 
