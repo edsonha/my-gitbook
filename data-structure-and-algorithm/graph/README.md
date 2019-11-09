@@ -2,7 +2,7 @@
 
 A graph is a set of values that are related. There are connections \(edges\) to different nodes \(vertex\) in a graph.
 
-![](../.gitbook/assets/untitled.jpg)
+![](../../.gitbook/assets/untitled.jpg)
 
 There are 3 things to take note in a graph:
 
@@ -12,7 +12,7 @@ There are 3 things to take note in a graph:
 
 There are 3 different ways to represent graph:
 
-![](../.gitbook/assets/untitled3.jpg)
+![](../../.gitbook/assets/untitled3.jpg)
 
 * Edge List - simply shows the connection
 

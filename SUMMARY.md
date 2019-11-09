@@ -43,7 +43,8 @@
 * [Tree](data-structure-and-algorithm/tree/README.md)
   * [Binary Heap](data-structure-and-algorithm/tree/binary-heap-priority-queue.md)
   * [Trie](data-structure-and-algorithm/tree/trie.md)
-* [Graph](data-structure-and-algorithm/graph.md)
+* [Graph](data-structure-and-algorithm/graph/README.md)
+  * [Example of Graph](data-structure-and-algorithm/graph/example-of-graph.md)
 
 ## Algorithms
 
