@@ -50,6 +50,7 @@
 
 * [Recursion](algorithms/untitled/README.md)
   * [Examples of Recursion](algorithms/untitled/factorial-and-fibonacci.md)
+* [Sorting](algorithms/sorting.md)
 
 ## SECURITY
 
