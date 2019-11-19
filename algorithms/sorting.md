@@ -26,6 +26,16 @@ Elementary Sort
 
 Complex Sort 
 
-1. Merge Sort
+1. Merge Sort: O\(n log\(n\)\) for time complexity and O\(n\) for space complexity
 2. Quick Sort
+
+What is O\(n log\(n\)\)?
+
+Merge Sort and Quick Sort use technique, such as divide and conquer as well as recursion - to divide the problem down to do work on each subset and then combining the solutions. So this will give log\(n\). For the first part, you will still have n and that n comes from the fact that we're still comparing everything in order to sort it. But, it is better than O\(n^2\) because we are not comparing everything with everything.
+
+// merge sort we call stable which just means that if you have equivalent elements that
+
+// is let's say 6 and 6 or a name that is the same it will keep the original order in the array.
+
+// And this can sometimes be important depending on the type of data.
 
