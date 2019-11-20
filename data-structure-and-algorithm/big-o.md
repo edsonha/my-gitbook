@@ -9,6 +9,7 @@ Examples of big O notation:
 
 1. O\(1\) or constant time, meaning the number of operation is not dependent on how large the input is
 2. O\(n\) or linear time, meaning as the inputs increase,  the number of operations increase linearly. Example is "for-loop"
-3. O\(n2\). Example is nested loop
+3. O\(n^2\). Example is nested loop
 4. O\(2^n\). Example is Fibonacci calculation in recursion
+5. O\(n log\(n\) - compare and search and O\(log \(n\)\) - binary search
 
