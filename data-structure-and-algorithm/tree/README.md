@@ -53,11 +53,13 @@ In summary, here are the pro and con of BST
 
  Comparison with Arrays:
 
-* BST wins in term of searching because you do not need to iterate, especially with array is unsorted. In term of insert and delete, unless it is at the end of the array, BST wins because with array, you need to shift index.
+* BST wins in term of searching because you do not need to iterate O\(log\(n\)\), especially with array is unsorted. In term of insert and delete, unless it is at the end of the array, BST wins because with array, you need to shift index.
 
 Comparison with Hash Table:
 
-* Although hash table has O\(1\) for insert and search, BST has sorted data and we have the relationship
+* Although hash table has O\(1\) for insert and search, BST has sorted data and we have the relationship VS hash table that does not have any order.
+
+So, at the end of the day, you represent data with different data structures based on your needs.
 
 **AVL Tree and Red Black Tree**
 
