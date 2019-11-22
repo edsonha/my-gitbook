@@ -22,7 +22,7 @@ We go from root node, then the second level, the third level and so on from left
 
 Pros: 
 
-* Shortest path - This is more apparent in Graph data structure where it is very good for finding the shortest path between a starting point and any other reachable node because we start off with the root node and then search the closest nodes first and then the node further.
+* Shortest path - This is more apparent in Graph data structure where it is very good for finding the shortest path between a starting point and any other reachable node because we start off with the root node and then search the closest nodes first and then the node further without taking into account weight of the edges \(the connection\).
 * Closer node - If you know that the node is likely in the upper level of a tree, then BFS is better because it will search through the closest node first.
 
 Cons: 
@@ -43,4 +43,12 @@ Pros:
 Cons:
 
 * Can get slow if the tree or graph is really deep and it's not necessarily good at finding the shortest path.
+
+**Bellman-Ford and Dijkstra** 
+
+It is algorithm to find the shortest path. 
+
+Pro of Bellman-Ford algorithm can accommodate negative weight VS Dijkstra which cannot do that.
+
+Con of Bellman-Ford algorithm can take a long time to run in term of time complexity with O\(n^2\) on worst case scenario VS Dijkstra which is more efficient.
 
