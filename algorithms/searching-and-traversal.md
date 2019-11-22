@@ -14,7 +14,9 @@ If our data is sorted, we can do better than O\(n\) because we essentially mimic
 
 Traversals simply means visiting every node and the operation is O\(n\) as we are visiting every single node. So how do we go about doing this in a data structure like a tree or graph? We use Breadth First Search and Depth First Search.
 
-**Breadth First Search O\(n\)**
+**Breadth First Search** 
+
+O\(n\) time complexity and O\(n\) space complexity where n is the breadth of the tree, because we use queue data structure
 
 We go from root node, then the second level, the third level and so on from left to right. BFS uses additional memory because it is necessary to track every nodes and its child nodes in order on a given level.
 
@@ -27,7 +29,9 @@ Cons:
 
 * More memory as we need to keep track of every nodes and its child nodes.
 
-**Depth First Search O\(n\)**
+**Depth First Search** 
+
+O\(n\) time complexity and O\(n\) space complexity where n is the height of the tree, because we use stack data structure
 
 The search follows one branch of the tree down as many levels as possible until the target notice found or the end is reached. When the search cannot go on any further, it continues at the nearest ancestor with an unexplored child. DFS has a lower memory requirement than BFS because it's not necessary to store all the nodes and its child nodes.
 
