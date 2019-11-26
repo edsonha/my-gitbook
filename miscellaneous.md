@@ -1,14 +1,14 @@
 # Miscellaneous
 
-## 1. 
+## 1. Private Methods
 
 **\_\_somefunction** - underscore means, in most other languages like Java, when you create a class you can have a private properties that you cannot access outside the class. With Javascript, that is not possible. So there is a common standard which is to put underscore and in JS world, this says that it is a private property that should not be accessed outside the scope.
 
-## 2.
+## 2. The Garbage Collector
 
 Our computers are going to delete the memory that is unused and because it sees that there is still a variable referencing this location in memory and this value in memory, it's not going to delete it \(there is pointer to this location in memory\). How things get deleted in JS is simply removed the pointer and in JS, memory is managed automatically, the memory will get deleted.
 
-## 3.
+## 3. Everything is Object in JS \(Number too\)
 
 ```
 var a = new Number(5);
@@ -35,10 +35,18 @@ var func = () => ({ foo: 1 });
 // Calling func() returns { foo:1 }
 ```
 
-## 5. 
+## 5. Update Project Dependencies
 
 ```
+3 Ways:
 
+A. npm audit fix OR npm audit fix --force
+(with --force, it may have breaking changes)
+
+B. npm update 
+(will look into ^ or >=. If ^, will only update the minor release)
+
+C. change the package.json to the desired version & run npm install
 ```
 
 ## 6.
