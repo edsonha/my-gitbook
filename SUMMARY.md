@@ -55,6 +55,14 @@
 * [Searching and Traversal](algorithms/searching-and-traversal.md)
 * [Dynamic Programming](algorithms/dynamic-programming.md)
 
+## REFACTORING
+
+* [Code Smells](refactoring/code-smells/README.md)
+  * [Primitive Obsession](refactoring/code-smells/primitive-obsession.md)
+  * [Speculative Generality](refactoring/code-smells/speculative-generality.md)
+  * [God Class](refactoring/code-smells/god-class.md)
+  * [Long Parameter List](refactoring/code-smells/long-parameter-list.md)
+
 ## SECURITY
 
 * [Encryption](security/encryption.md)
