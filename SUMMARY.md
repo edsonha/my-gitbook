@@ -58,6 +58,12 @@
 ## REFACTORING
 
 * [Code Smells](refactoring/code-smells/README.md)
+  * [Long Function](refactoring/code-smells/long-function.md)
+  * [Duplicate Code](refactoring/code-smells/duplicate-code.md)
+  * [Loops](refactoring/code-smells/loops.md)
+  * [Double Negative](refactoring/code-smells/double-negative.md)
+  * [Christmas Tree Code](refactoring/code-smells/christmas-tree-code.md)
+  * [Complex Condition](refactoring/code-smells/complex-condition.md)
   * [Primitive Obsession](refactoring/code-smells/primitive-obsession.md)
   * [Speculative Generality](refactoring/code-smells/speculative-generality.md)
   * [God Class](refactoring/code-smells/god-class.md)
