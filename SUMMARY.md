@@ -57,6 +57,9 @@
 
 ## REFACTORING
 
+* [Clean Code](refactoring/clean-code/README.md)
+  * [Variables](refactoring/clean-code/variables.md)
+  * [Functions](refactoring/clean-code/functions.md)
 * [Code Smells](refactoring/code-smells/README.md)
   * [Long Function](refactoring/code-smells/long-function.md)
   * [Duplicate Code](refactoring/code-smells/duplicate-code.md)

@@ -1,6 +1,6 @@
 # Long Function
 
-```text
+```javascript
 //Problem:
 function printOwing(invoice) {
   printBanner();
