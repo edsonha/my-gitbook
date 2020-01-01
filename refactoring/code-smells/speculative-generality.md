@@ -1,6 +1,6 @@
 # Speculative Generality
 
-```text
+```javascript
 //Problem:
 class Delivery {
   rating(aDriver) {

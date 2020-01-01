@@ -1,6 +1,6 @@
 # Example of FP
 
-```
+```javascript
 const user = {
   name: 'Kim',
   active: true,

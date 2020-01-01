@@ -4,7 +4,7 @@ Dynamic Programming is an optimization technique using caching. At higher level,
 
 We can reduce the time complexity of Fibonacci algorithm by using memorization.
 
-```text
+```javascript
 //0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233...
 
 let calculations = 0;

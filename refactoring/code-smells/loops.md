@@ -1,6 +1,6 @@
 # Loops
 
-```text
+```javascript
 //Problem:
 function formatRecords(input) {
   const lines = input.split("\n");

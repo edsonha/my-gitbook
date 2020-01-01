@@ -1,6 +1,6 @@
 # Examples of Recursion
 
-```text
+```javascript
 // Factorial
 function findFactorialIterative(number) {
   let answer = 1;
@@ -51,7 +51,7 @@ function fibonacciRecursive(n) {
 fibonacciRecursive(8); //21
 ```
 
-```text
+```javascript
 //Implement a function that reverses a string 
 function reverseString(str) { 
     const splitString = str.split(""); 

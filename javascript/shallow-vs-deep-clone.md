@@ -6,7 +6,7 @@ In general, when we copy things and whenever we make changes, we expect the orig
 
 When you make a copy, it will be a real copy
 
-```
+```javascript
 const a = 5
 let b = a
 b = 6
@@ -18,7 +18,7 @@ console.log(a) // 5
 
 When we assign variable to an object, it just creates a pointer \(reference\) to that value. So if make a copy b = a, changes in "b" will also impact "a" as well since "a" and "b" actually point to the same thing.
 
-```
+```javascript
 let obj = {one: 1, two: 2};
 let obj2 = obj;
 console.log(
@@ -33,7 +33,7 @@ console.log(obj2); // {one: 1, two: 2, three: 3}; <-- ✅
 
 So, there are three ways to copy an object:
 
-```
+```javascript
 1. Spread Operator
 let obj = {one: 1, two: 2};
 let obj2 = {...obj};
@@ -63,7 +63,7 @@ console.log(obj2); // {one: 1, two: 2, three: 3}; <-- ✅
 
 A deep clone means that all of the values of the new variable are copied and disconnected from the original variable, for example, JSON. A shallow clone means that certain \(sub-\)values are still connected to the original variable, for example, spread operator.
 
-```
+```javascript
 const nestedObject = {
   country: '🇨🇦',
   city: {
@@ -84,7 +84,7 @@ console.log(shallowClone);
 
 When you have a nested object \(or array\) and you copy it, nested objects inside that object will not be copied, since they are only pointers / references. In summary, a shallow copy means the first level is copied, deeper levels are referenced. The deep clone is a true copy for nested objects.
 
-```
+```javascript
 const deepClone = JSON.parse(JSON.stringify(nestedObject))
 // Changed our cloned object
 deepClone.country = '🇹🇼'
@@ -100,7 +100,7 @@ console.log(deepClone);
 
 Copying arrays is just as common as copying objects. A lot of the logic behind it is similar, since arrays are also just objects under the hood.
 
-```
+```javascript
 Example 1:
 const a = [1,2,3]
 let b = [...a]

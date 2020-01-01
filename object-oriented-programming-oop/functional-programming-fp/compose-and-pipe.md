@@ -4,7 +4,7 @@ Composition is the idea that any sort of data transformation that we do should b
 
 It's kind of like a conveyor belt right in a factory. It's easy to move pieces around to get the desired output based on the user's specific requirements.
 
-```
+```javascript
 // Compose function that do two things: 
 // multiply by three and make abosulte value.
 
@@ -22,7 +22,7 @@ console.log(multiplyBy3AndAbsolute(-50));
 
 Pipe is similar to compose, but different flow.
 
-```
+```javascript
 fn1(fn2(fn3(50))); 
 //Create compose and pipe:
 
@@ -36,7 +36,7 @@ const pipe = (f, g) => data => g(f(data));
 
 Compose and pipe function that can take many arguments
 
-```
+```javascript
 const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
 
 const pipe = (...fns) => fns.reduceRight((f, g) => (...args) => f(g(...args)));
