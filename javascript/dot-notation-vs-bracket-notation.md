@@ -1,6 +1,6 @@
 # Dot Notation vs Bracket Notation
 
-```javascript
+```
 const newObject = {};
 
 newObject.0 = "value 1" 

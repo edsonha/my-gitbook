@@ -1,6 +1,6 @@
 # This
 
-```javascript
+```
 // Four types of binding:
 // 1. New Binding allow us to assign this to the object that we instantiate
 function Person(name, age) {

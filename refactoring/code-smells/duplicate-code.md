@@ -1,6 +1,6 @@
 # Duplicate Code
 
-```javascript
+```text
 //Problem:
 class MedicalRecord {
   constructor() {

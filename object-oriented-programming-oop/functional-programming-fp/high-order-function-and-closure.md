@@ -4,7 +4,7 @@ In JavaScript, functions are first class citizens which means we can have high o
 
 **High Order Function**
 
-```javascript
+```
 const hof = () => () => 5;
 hof()(); // 5
 
@@ -17,7 +17,7 @@ hof(a) // 5
 
 **I**n JS, it is a mechanism for containing the states of variables. We create a closure whenever a function accesses a variable defined outside of the immediate function scope and that is the scope of the parent. Because of closure, this increment function below remembers the variable used by or declared in the outer scope, so the variable used by the inner function will be available to it, even after the outer function has finished running. With closure, we just created private variables / data privacy which is the count
 
-```javascript
+```
 const closure = function() {
   let count = 0;
   return function increment() {

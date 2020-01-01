@@ -10,7 +10,7 @@ Linked list \(Single Linked List\) contains a set of nodes. Each nodes has two e
 
 Pointer is simply a reference to another place in memory or another object or another node
 
-```javascript
+```
 let obj1 = {a: true};
 let obj2 = obj1
 ```

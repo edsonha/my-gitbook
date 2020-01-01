@@ -4,7 +4,7 @@ Recursion isn't technically an algorithm. It's more of a concept. It is a functi
 
 Two problems of recursion is the risk of stack overflow and it is not memory efficient as our stacks need to hold and remember these function call.
 
-```javascript
+```text
 let counter = 0;
 function inception() {
   while (counter > 3) {

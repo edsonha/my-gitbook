@@ -16,20 +16,20 @@ There are 3 different ways to represent graph:
 
 * Edge List - simply shows the connection
 
-```javascript
+```
 const edgeList = [[0,2], [1,2], [2,3], [1,3]]
 ```
 
 * Adjacent List - create a graph where the index is the node and the value is the nodes neighbors
 
-```javascript
+```
 const adjacentList = { 0: [2], 1: [2,3], 2: [0,1,3], 3: [1,2]}
 //Node 0 is connected to 2, node 1 is connected to 2 and 3...
 ```
 
 * Adjacent Matrix -  the matrix is going to have zeros and ones indicating whether the node X has a connection to node Y. Zero means no connection and One means yes. And if you have a weighted graph, you can actually add weights here, instead of 1 and 0.
 
-```javascript
+```
  const graph = { 
   0: [0, 0, 1, 0], // index 0 has connection with 2 
   1: [0, 0, 1, 1], // index 1 has connection with 2 and 3 

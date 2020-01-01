@@ -2,7 +2,7 @@
 
 It is a way for us to partially apply a function. Well, it means taking a function applying some of its arguments into the function, so it remembers those parameters and then it uses closures to later on be called with all the rest of the arguments.
 
-```javascript
+```
 const multiply = (a, b, c) => a * b * c;
 
 const partialMultiplyBy5 = multiply.bind(null, 5);

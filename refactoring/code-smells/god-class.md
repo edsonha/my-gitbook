@@ -1,6 +1,6 @@
 # God Class
 
-```javascript
+```text
 //Problem:
 class CustomerService {
   calculateOrderDiscount(aProducts, oCustomer) {

@@ -1,6 +1,6 @@
 # Christmas Tree Code
 
-```javascript
+```text
 //Problem:
 class Security {
   constructor(securityChecker) {

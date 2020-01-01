@@ -236,3 +236,194 @@ function createTempFile(name) {
 }
 ```
 
+```javascript
+AVOID SIDE EFFECTS (PART 1)
+Bad:
+// Global variable referenced by following function.
+// If we had another function that used this name, now it'd be an array and 
+// it could break it.
+let name = "Ryan McDermott";
+
+function splitIntoFirstAndLastName() {
+  name = name.split(" ");
+}
+
+splitIntoFirstAndLastName();
+
+console.log(name); // ['Ryan', 'McDermott'];
+
+Good:
+function splitIntoFirstAndLastName(name) {
+  return name.split(" ");
+}
+
+const name = "Ryan McDermott";
+const newName = splitIntoFirstAndLastName(name);
+
+console.log(name); // 'Ryan McDermott';
+console.log(newName); // ['Ryan', 'McDermott'];
+```
+
+```javascript
+AVOID SIDE EFFECTS (PART 2)
+Bad:
+const addItemToCart = (cart, item) => {
+  cart.push({ item, date: Date.now() });
+};
+
+Good:
+const addItemToCart = (cart, item) => {
+  return [...cart, { item, date: Date.now() }];
+};
+```
+
+```javascript
+DON'T WRITE TO GLOBAL FUNCTIONS
+Bad:
+Array.prototype.diff = function diff(comparisonArray) {
+  const hash = new Set(comparisonArray);
+  return this.filter(elem => !hash.has(elem));
+};
+
+Good:
+class SuperArray extends Array {
+  diff(comparisonArray) {
+    const hash = new Set(comparisonArray);
+    return this.filter(elem => !hash.has(elem));
+  }
+}
+```
+
+```javascript
+FAVOR FUNCTIONAL PROGRAMMING OVER IMPERATIVE PROGRAMMING
+Bad:
+const programmerOutput = [
+  {
+    name: "Uncle Bobby",
+    linesOfCode: 500
+  },
+  {
+    name: "Suzie Q",
+    linesOfCode: 1500
+  },
+  {
+    name: "Jimmy Gosling",
+    linesOfCode: 150
+  },
+  {
+    name: "Gracie Hopper",
+    linesOfCode: 1000
+  }
+];
+
+let totalOutput = 0;
+
+for (let i = 0; i < programmerOutput.length; i++) {
+  totalOutput += programmerOutput[i].linesOfCode;
+}
+
+Good:
+const totalOutput = programmerOutput.reduce(
+  (totalLines, output) => totalLines + output.linesOfCode,
+  0
+);
+```
+
+```javascript
+ENCAPSULTATE CONDITIONALS
+Bad:
+if (fsm.state === "fetching" && isEmpty(listNode)) {
+  // ...
+}
+
+Good:
+function shouldShowSpinner(fsm, listNode) {
+  return fsm.state === "fetching" && isEmpty(listNode);
+}
+
+if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
+  // ...
+}
+```
+
+```javascript
+AVOID CONDITIONALS
+Bad:
+class Airplane {
+  // ...
+  getCruisingAltitude() {
+    switch (this.type) {
+      case "777":
+        return this.getMaxAltitude() - this.getPassengerCount();
+      case "Air Force One":
+        return this.getMaxAltitude();
+      case "Cessna":
+        return this.getMaxAltitude() - this.getFuelExpenditure();
+    }
+  }
+}
+
+Good:
+class Airplane {
+  // ...
+}
+
+class Boeing777 extends Airplane {
+  // ...
+  getCruisingAltitude() {
+    return this.getMaxAltitude() - this.getPassengerCount();
+  }
+}
+
+class AirForceOne extends Airplane {
+  // ...
+  getCruisingAltitude() {
+    return this.getMaxAltitude();
+  }
+}
+
+class Cessna extends Airplane {
+  // ...
+  getCruisingAltitude() {
+    return this.getMaxAltitude() - this.getFuelExpenditure();
+  }
+}
+```
+
+```javascript
+AVOID TYPE-CHECKING (PART 1)
+Bad:
+function travelToTexas(vehicle) {
+  if (vehicle instanceof Bicycle) {
+    vehicle.pedal(this.currentLocation, new Location("texas"));
+  } else if (vehicle instanceof Car) {
+    vehicle.drive(this.currentLocation, new Location("texas"));
+  }
+}
+
+Good:
+function travelToTexas(vehicle) {
+  vehicle.move(this.currentLocation, new Location("texas"));
+}
+```
+
+```javascript
+AVOID TYPE-CHECKING (PART 2)
+Bad:
+function combine(val1, val2) {
+  if (
+    (typeof val1 === "number" && typeof val2 === "number") ||
+    (typeof val1 === "string" && typeof val2 === "string")
+  ) {
+    return val1 + val2;
+  }
+
+  throw new Error("Must be of type String or Number");
+}
+
+Good:
+function combine(val1, val2) {
+  return val1 + val2;
+}
+```
+

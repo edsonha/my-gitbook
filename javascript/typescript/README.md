@@ -4,7 +4,7 @@ Typescript \(Static Type\) is a super set of vanilla JS \(Dynamic Type\), meanin
 
 In static typed language, we have to declare the variable explicitly before using them.  Examples of types: string, number, boolean, Array&lt;string&gt;, object, null, undefined, void , enums, any.
 
-```javascript
+```
 let myString: string     
 //declate a variable with a type "string"
 
@@ -35,7 +35,7 @@ There is a confusion of mixed up between Static Type and Strong Type VS Dynamic 
 
 ![](../../.gitbook/assets/programming-language.jpg)
 
-```javascript
+```
 //Weak Type (example of type coercion in JS)
 var a = "Hello"
 a + 17   //return "Hello17"

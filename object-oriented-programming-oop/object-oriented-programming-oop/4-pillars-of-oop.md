@@ -26,7 +26,7 @@ Take a look at a sketch of geometric figures implementation. They reuse a common
 
 ![](../../.gitbook/assets/4.jpg)
 
-```javascript
+```
 // Without Polymorphism
 class Dog {
   woof() {
@@ -65,7 +65,7 @@ for (let i = 0; i < animals.length; i++) {
 }
 ```
 
-```javascript
+```
 // With Polymorphism
 class Animal {
   makeSound() {

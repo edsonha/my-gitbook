@@ -1,6 +1,6 @@
 # Long Parameter List
 
-```javascript
+```text
 //Problem:
 function getInvoices(startDate, endDate) {
   //to pull invoices for that duration
@@ -20,7 +20,7 @@ class DateRange {
 }
 ```
 
-```javascript
+```text
 //Problem:
 function availableVacation(anEmployee, grade) {
   // calculate vacation...

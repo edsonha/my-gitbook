@@ -1,6 +1,6 @@
 # Primitive Obsession
 
-```javascript
+```text
 //Problem:
 class User {
   constructor(firstName, lastName, age, gender, block, streetName, unitNo, postalCode){

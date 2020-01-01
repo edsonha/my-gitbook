@@ -8,62 +8,60 @@ Imagine we have two super-class: Robot and Animal. \(Left-Side\) How do we creat
 
 ![](../../.gitbook/assets/untitled22.jpg)
 
-```javascript
-// Composition to the rescue by separating the data and methods
-const learnAttack = character => ({
-  attack: () => console.log(`${character.name} attacked`)
-});
+    // Composition to the rescue by separating the data and methods
+    const learnAttack = character => ({
+      attack: () => console.log(`${character.name} attacked`)
+    });
 
-const learnSleep = character => {
-  return {
-    sleep: () =>
-      console.log(`${character.name} fall asleep with ${character.weapon}`)
-  };
-};
+    const learnSleep = character => {
+      return {
+        sleep: () =>
+          console.log(`${character.name} fall asleep with ${character.weapon}`)
+      };
+    };
 
-const learnIntroduce = character => {
-  return {
-    introduce: () =>
-      console.log(`Hi, my name is ${character.name}. I am ${character.type}`)
-  };
-};
+    const learnIntroduce = character => {
+      return {
+        introduce: () =>
+          console.log(`Hi, my name is ${character.name}. I am ${character.type}`)
+      };
+    };
 
-function LazyElf(name, type, weapon) {
-  let lazyElf = {
-    name,
-    type,
-    weapon
-  };
-  return Object.assign(
-    {},
-    lazyElf,
-    learnIntroduce(lazyElf),
-    learnSleep(lazyElf)
-  );
-}
+    function LazyElf(name, type, weapon) {
+      let lazyElf = {
+        name,
+        type,
+        weapon
+      };
+      return Object.assign(
+        {},
+        lazyElf,
+        learnIntroduce(lazyElf),
+        learnSleep(lazyElf)
+      );
+    }
 
-function FitElf(name, type, weapon) {
-  let fitElf = {
-    name,
-    type,
-    weapon
-  };
-  return Object.assign({}, fitElf, learnAttack(fitElf), learnIntroduce(fitElf));
-}
+    function FitElf(name, type, weapon) {
+      let fitElf = {
+        name,
+        type,
+        weapon
+      };
+      return Object.assign({}, fitElf, learnAttack(fitElf), learnIntroduce(fitElf));
+    }
 
-const leroy = LazyElf("Leroy", "lazy elf", "bow");
-const ben = FitElf("Ben", "fit elf", "stone");
+    const leroy = LazyElf("Leroy", "lazy elf", "bow");
+    const ben = FitElf("Ben", "fit elf", "stone");
 
-// learnAttack(leroy).attack() //Not part of Leroy's method
-leroy.sleep();
-leroy.introduce();
-console.log(leroy);
+    // learnAttack(leroy).attack() //Not part of Leroy's method
+    leroy.sleep();
+    leroy.introduce();
+    console.log(leroy);
 
-// learnSleep(ben).sleep() //Not part of Ben's method
-ben.attack();
-ben.introduce();
-console.log(ben);
-```
+    // learnSleep(ben).sleep() //Not part of Ben's method
+    ben.attack();
+    ben.introduce();
+    console.log(ben);
 
 You should favor composition over inheritance because inheritance encourages you to predict the future. You build the objects very early on in the project. And you are most likely going to make big design mistakes while doing that. Because humans cannot predict the future. It's just better to use composition from the start. It's more flexible, it's more powerful, and it's really easy to do. Inheritance has problem of tight coupling where if you change something on a class, you have to make sure that it doesn't break anything with its sub classes.
 

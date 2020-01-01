@@ -9,7 +9,7 @@ If we break down FP, it all come down to these concept of pure functions. In pur
 1. The function cannot modify anything outside itself, meaning no side effect
 2. Function always return the same output given the same input
 
-```javascript
+```
 // Side effects:
 const array = [1, 2, 3]; // global object or shared state
 function mutateArray(arr) {
@@ -28,7 +28,7 @@ array; // [1,2,1,1]
 
 And that's one of the problems with having side effects is that reusing shared state, like a global variable that can interact with anything and the order of the function calls matter and that can cause a lot of bugs.
 
-```javascript
+```
 // Solution to solve side effect using concat and map
 const array = [1, 2, 3];
 function removeLastItem(arr) {
@@ -46,7 +46,7 @@ console.log(multiplyBy2(array)); //[2,4,6]
 console.log(array); //[1,2,3]
 ```
 
-```javascript
+```
 // not returning the same output for same input
 function randomNumber(num) {
   console.log(Math.random(num))

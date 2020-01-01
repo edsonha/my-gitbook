@@ -2,7 +2,7 @@
 
 ![](../../.gitbook/assets/untitled%20%281%29.jpg)
 
-```javascript
+```text
 class Graph {
   constructor() {
     this.numberOfNodes = 0;
