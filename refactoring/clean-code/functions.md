@@ -58,61 +58,181 @@ function isActiveClient(client) {
 ```javascript
 FUNCTIONS SHOULD ONLY BE ONE LEVEL OF ABSTRACTION
 Bad:
-function parseBetterJSAlternative(code) {
-  const REGEXES = [
-    // ...
-  ];
-
-  const statements = code.split(" ");
-  const tokens = [];
-  REGEXES.forEach(REGEX => {
-    statements.forEach(statement => {
-      // ...
-    });
+const placeOrder = ({ order }) => {
+  validateAvailability(order);
+  
+  const total = order.items.reduce(
+    (item, totalAcc) =>
+      totalAcc + item.unitPrice * item.units,
+    0,
+  );
+  const invoiceInfo = getInvoiceInfo(order);
+  const request = new PaymentService.Request({
+    total,
+    invoiceInfo,
   });
+  const response = PaymentService.pay(request);
+  
+  sendInvoice(response.invoice);
+  
+  shipOrder(order);
+};
 
-  const ast = [];
-  tokens.forEach(token => {
-    // lex...
+Good:
+const getTotal = order => {
+  order.items.reduce(
+    (item, totalAcc) =>
+      totalAcc + item.unitPrice * item.units,
+    0,
+  );
+};
+
+const pay = (total, invoiceInfo) => {
+  const request = new PaymentService.Request({
+    total,
+    invoiceInfo,
   });
+  const response = PaymentService.pay(request);
 
-  ast.forEach(node => {
-    // parse...
+  sendInvoice(response.invoice);
+};
+
+const payOrder = order => {
+  const total = getTotal(order);
+  const invoiceInfo = getInvoiceInfo(order);
+  
+  pay(total, invoiceInfo);
+};
+
+const placeOrder = ({ order }) => {
+  validateAvailability(order);
+  payOrder(order);
+  shipOrder(order);
+};
+```
+
+```javascript
+REMOVE DUPLICATE CODE
+Bad:
+function showDeveloperList(developers) {
+  developers.forEach(developer => {
+    const expectedSalary = developer.calculateExpectedSalary();
+    const experience = developer.getExperience();
+    const githubLink = developer.getGithubLink();
+    const data = {
+      expectedSalary,
+      experience,
+      githubLink
+    };
+
+    render(data);
+  });
+}
+
+function showManagerList(managers) {
+  managers.forEach(manager => {
+    const expectedSalary = manager.calculateExpectedSalary();
+    const experience = manager.getExperience();
+    const portfolio = manager.getMBAProjects();
+    const data = {
+      expectedSalary,
+      experience,
+      portfolio
+    };
+
+    render(data);
   });
 }
 
 Good:
-function parseBetterJSAlternative(code) {
-  const tokens = tokenize(code);
-  const syntaxTree = parse(tokens);
-  syntaxTree.forEach(node => {
-    // parse...
+function showEmployeeList(employees) {
+  employees.forEach(employee => {
+    const expectedSalary = employee.calculateExpectedSalary();
+    const experience = employee.getExperience();
+
+    const data = {
+      expectedSalary,
+      experience
+    };
+
+    switch (employee.type) {
+      case "manager":
+        data.portfolio = employee.getMBAProjects();
+        break;
+      case "developer":
+        data.githubLink = employee.getGithubLink();
+        break;
+    }
+
+    render(data);
   });
 }
+```
 
-function tokenize(code) {
-  const REGEXES = [
-    // ...
-  ];
+```javascript
+SET DEFAULT OBJECTS WITH OBJECT.ASSIGN
+Bad:
+const menuConfig = {
+  title: null,
+  body: "Bar",
+  buttonText: null,
+  cancellable: true
+};
 
-  const statements = code.split(" ");
-  const tokens = [];
-  REGEXES.forEach(REGEX => {
-    statements.forEach(statement => {
-      tokens.push(/* ... */);
-    });
-  });
-
-  return tokens;
+function createMenu(config) {
+  config.title = config.title || "Foo";
+  config.body = config.body || "Bar";
+  config.buttonText = config.buttonText || "Baz";
+  config.cancellable =
+    config.cancellable !== undefined ? config.cancellable : true;
 }
 
-function parse(tokens) {
-  const syntaxTree = [];
-  tokens.forEach(token => {
-    syntaxTree.push(/* ... */);
-  });
+createMenu(menuConfig);
 
-  return syntaxTree;
+Good:
+const menuConfig = {
+  title: "Order",
+  // User did not include 'body' key
+  buttonText: "Send",
+  cancellable: true
+};
+
+function createMenu(config) {
+  config = Object.assign(
+    {
+      title: "Foo",
+      body: "Bar",
+      buttonText: "Baz",
+      cancellable: true
+    },
+    config
+  );
+
+  // config now equals: {title: "Order", body: "Bar", buttonText: "Send", cancellable: true}
+  // ...
+}
+
+createMenu(menuConfig);
+```
+
+```javascript
+DONT'T USE FLAGS AS FUNCTION PARAMETERS
+Bad:
+function createFile(name, temp) {
+  if (temp) {
+    fs.create(`./temp/${name}`);
+  } else {
+    fs.create(name);
+  }
+}
+
+Good:
+function createFile(name) {
+  fs.create(name);
+}
+
+function createTempFile(name) {
+  fs.create(`./temp/${name}`);
 }
 ```
 
