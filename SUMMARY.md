@@ -58,6 +58,7 @@
 ## REFACTORING
 
 * [Clean Code](refactoring/clean-code/README.md)
+  * [Formatting](refactoring/clean-code/formatting.md)
   * [Error Handling](refactoring/clean-code/error-handling.md)
   * [Concurrency](refactoring/clean-code/concurrency.md)
   * [Testing](refactoring/clean-code/testing.md)
