@@ -58,6 +58,9 @@
 ## REFACTORING
 
 * [Clean Code](refactoring/clean-code/README.md)
+  * [Error Handling](refactoring/clean-code/error-handling.md)
+  * [Concurrency](refactoring/clean-code/concurrency.md)
+  * [Testing](refactoring/clean-code/testing.md)
   * [SOLID Principles](refactoring/clean-code/solid-principles.md)
   * [Classes](refactoring/clean-code/classes.md)
   * [Objects and Data Structures](refactoring/clean-code/objects-and-data-structures.md)
