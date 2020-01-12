@@ -5,6 +5,7 @@
 
 ## JAVASCRIPT
 
+* [Destructuring](javascript/destructuring.md)
 * [Spread Syntax and Rest Parameters](javascript/spread-syntax-and-rest-parameters.md)
 * [Typescript](javascript/typescript/README.md)
   * [Examples of Types](javascript/typescript/examples-of-types.md)

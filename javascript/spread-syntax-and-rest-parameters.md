@@ -39,3 +39,33 @@ var mergedObj = { ...obj1, ...obj2 };
 // Object { foo: "baz", x: 42, y: 13 }
 ```
 
+**Rest Parameters**
+
+```javascript
+function myFun(a, b, ...manyMoreArgs) {
+  console.log("a", a)
+  console.log("b", b)
+  console.log("manyMoreArgs", manyMoreArgs)
+}
+
+myFun("one", "two", "three", "four", "five", "six")
+
+// a, one
+// b, two
+// manyMoreArgs, [three, four, five, six]
+
+myFun("one", "two")
+
+// a, one
+// b, two
+// manyMoreArgs, []
+
+
+function sortRestArgs(...theArgs) {
+  let sortedArgs = theArgs.sort()
+  return sortedArgs
+}
+
+console.log(sortRestArgs(5, 3, 7, 1)) // 1, 3, 5, 7
+```
+
