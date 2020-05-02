@@ -4,7 +4,7 @@ Caching is a way to store values so you can use them later on.
 
 Memoization is a specific form of caching that involves caching the return value of a function based on its parameters.
 
-```
+```javascript
 // Without caching
 function addTo80(n) {
   console.log("very long calculation");

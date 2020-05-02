@@ -13,6 +13,10 @@
 * [Dot Notation vs Bracket Notation](javascript/dot-notation-vs-bracket-notation.md)
 * [Shallow vs Deep Clone](javascript/shallow-vs-deep-clone.md)
 
+## C\#
+
+* [Basic](c/basic.md)
+
 ## Programming Paradigms <a id="object-oriented-programming-oop"></a>
 
 * [SOLID Principles](object-oriented-programming-oop/solid-principles.md)

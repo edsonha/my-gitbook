@@ -1,6 +1,6 @@
 # Double Negative
 
-```text
+```javascript
 //Problem:
 class Customer {
   constructor() {

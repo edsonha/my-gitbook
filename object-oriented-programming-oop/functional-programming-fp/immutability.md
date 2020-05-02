@@ -2,7 +2,7 @@
 
 Immutability means not changing the data / state, instead we make copies of the state and returning a new state every time a change is made. This is different concept with OOP where we had classes and you can change the name, property of the characters that we are building.
 
-```
+```javascript
 const obj = { name: "Andrei" };
 function clone(obj) {
   return { ...obj };
