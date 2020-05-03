@@ -49,6 +49,26 @@ foreach (String s in words)
 }
 ```
 
+**Defensive Programming - Mosh**
+
+```csharp
+//Preventing the count greater than no of elements in the list or count is 0 of less than 0
+
+if (count > list.Count || count <= 0)
+{
+    //first arguement is the parameter
+    //second arguement is the message we want to show
+    throw new ArgumentOutOfRangeException("count", "Count should be between 1 and the number of elements in the list");
+}
+
+
+//Preventing a null being thrown as the list
+if (list == null)
+{
+    throw new ArgumentNullException("list");
+}
+```
+
 **JS === C\#**
 
 * Substring

@@ -1,4 +1,4 @@
-# Shortcut
+# Shortcut and Debugging
 
 Ctrl + F5 =&gt; Start
 

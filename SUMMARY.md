@@ -16,7 +16,7 @@
 ## C\#
 
 * [Basic](c/basic.md)
-* [Shortcut](c/shortcut.md)
+* [Shortcut and Debugging](c/shortcut.md)
 
 ## Programming Paradigms <a id="object-oriented-programming-oop"></a>
 
