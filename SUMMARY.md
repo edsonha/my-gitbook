@@ -54,6 +54,10 @@
 * [Graph](data-structure-and-algorithm/graph/README.md)
   * [Example of Graph](data-structure-and-algorithm/graph/example-of-graph.md)
 
+## React
+
+* [Miscellaneous](react/miscellaneous.md)
+
 ## Algorithms
 
 * [Recursion](algorithms/untitled/README.md)
@@ -93,6 +97,7 @@
 
 ## Cheatsheet <a id="git"></a>
 
+* [NPM](git/npm.md)
 * [GIT](git/git.md)
 
 ## Writing Template
