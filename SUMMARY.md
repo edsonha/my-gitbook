@@ -56,7 +56,7 @@
 
 ## React
 
-* [Miscellaneous](react/miscellaneous.md)
+* [Best Practices](react/miscellaneous.md)
 
 ## Algorithms
 
