@@ -38,6 +38,6 @@ ShouldComponentUpdate can improve improvement by selecting if the component shou
 shouldComponentUpdate(nextProps, nextState) {
     console.log("shouldComponentUpdate!", nextProps);
     return nextProps.text !== this.props.text;
-  }
+}
 ```
 
