@@ -30,3 +30,14 @@ state = {
 }
 ```
 
+## 3. ShouldComponentUpdate
+
+ShouldComponentUpdate can improve improvement by selecting if the component should update or not. Return false \(No changes to state or props\) will not cause the component to move to the next phase of render and componentDidUpdate. Return true \(Changes to state or props\) will cause the component to render and componentDidUpdate. Because the idea is when the parent component \(App\) is re-render, it will trigger a chain reaction that also re-render children component.
+
+```csharp
+shouldComponentUpdate(nextProps, nextState) {
+    console.log("shouldComponentUpdate!", nextProps);
+    return nextProps.text !== this.props.text;
+  }
+```
+
