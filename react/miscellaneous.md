@@ -76,3 +76,9 @@ To prevent this, reselect library help us with memoization.
 
 When mapStateToProps is called again due to any state update of any other components, Reselect will not run expensive calculation if the input values state.num1, state.num2, state.num3 remain the same with previous run.
 
+## 4. Redux-Persist
+
+Session storage persists throughout the session. So as long as our tab is open even if we refresh the page we'll still have access to what we've stored in session storage. Whereas if we close the page then we would lose whatever it is that we stored in session storage.
+
+Local storage will persist until we clear it out. Meaning that if we close our window close our browser will always have access to it
+
