@@ -54,7 +54,7 @@
 * [Graph](data-structure-and-algorithm/graph/README.md)
   * [Example of Graph](data-structure-and-algorithm/graph/example-of-graph.md)
 
-## React
+## React-Redux <a id="react"></a>
 
 * [Best Practices](react/miscellaneous.md)
 

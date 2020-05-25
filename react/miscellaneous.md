@@ -41,3 +41,38 @@ shouldComponentUpdate(nextProps, nextState) {
 }
 ```
 
+## 4. Selector and mapStateToProps
+
+* Selector doesn't prevent re-render, selector prevent recalculation. 
+* What prevent re-render is mapStateToProps. If the value is same, then mapStateToProps would not re-render your component. mapStatetoProps uses shouldComponentUpdate under the hood.
+* If you try to memoize simple value\(non array and non object\), you probably don't need to because mapStateToProps can compare it easily for you.
+
+Flow: action dispatch ---&gt; reducer update state ---&gt; if state change ---&gt; mapStateToProps run, receive latest state and compare current content with previous content ---&gt; if content is difference then re-render.
+
+Reducer is not depending on mapStateToProps, it is the other way around, it is mapStateToProps depending on reducer. The value you saw in mapStateToProps is processing reducer state to produce new value, not mapStateToProps pass the value to reducer. 
+
+Background:
+
+1. If reducer return new value \(new object\), then this mean state change.
+2. When state change, store will run every mounted component's mapStateToProps
+
+It is crucial to explain why memoization is needed.
+
+Imagine component A has some expensive calculation in its mapStateToProps:
+
+```csharp
+const mapState = (state) => { 
+  return {
+    profit: expensiveCalculation(state.num1,state.num2,state.num3)
+  }; 
+}
+```
+
+Now recall that any state change will run all mapStateToProps!
+
+Imagine component B dispatch an action that return new state from reducer, even though this state change has nothing to do with component A, store will still use the same state to run component A's mapStateToProps, thus the expensiveCalculation run every single time for no obvious reason!
+
+To prevent this, reselect library help us with memoization.
+
+When mapStateToProps is called again due to any state update of any other components, Reselect will not run expensive calculation if the input values state.num1, state.num2, state.num3 remain the same with previous run.
+
