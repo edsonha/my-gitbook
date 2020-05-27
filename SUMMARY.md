@@ -94,6 +94,8 @@
 
 * [Encryption](security/encryption.md)
 * [SSH](security/ssh.md)
+* [PostgreSQL](postgresql.md)
+* [Command](command.md)
 
 ## Cheatsheet <a id="git"></a>
 
