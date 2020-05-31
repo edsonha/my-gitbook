@@ -67,3 +67,11 @@ Pros: Encapsulation, more effective performance
 
 Cons: CSS is inside JS
 
+One example is styled-components. Underneath this tech, we are using a unique random ID that will guarantee name specificity that will not pollute the namespace.
+
+Advantages:
+
+1. Share and reuse components
+2. Have access to all selector
+3. Leverage on props to render the CSS \(i.e. can write isActive conditional props inside CSS\)
+
