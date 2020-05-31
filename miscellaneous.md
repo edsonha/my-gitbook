@@ -75,3 +75,32 @@ Advantages:
 2. Have access to all selector
 3. Leverage on props to render the CSS \(i.e. can write isActive conditional props inside CSS\)
 
+## 7. Object Reference
+
+```javascript
+For primitive value, it is not going to change
+var b = 3
+var c = b
+
+c // 3
+b // 3
+b = 5 // 5
+b // 5
+c // 3
+
+For object, it is going to change
+var obj1 = {id: 1}
+var obj2 = obj1
+
+obj1.id = 18 // 18
+obj1 // {id: 18}
+obj2 // {id: 18}
+
+//So for includes method to work, we have to pass the reference
+const o1 = { id: 1 }
+const o2 = { id: 2 }
+const newArray = [o1, o2]
+newArray.includes(o1) // true
+newArray.includes({id:1}) // false 
+```
+
