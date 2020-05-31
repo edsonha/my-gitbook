@@ -94,6 +94,7 @@
 
 * [Performance](junior-to-senior-1/performance/README.md)
   * [Minimized Files and Images](junior-to-senior-1/performance/minimized-files-and-images.md)
+  * [Minimized Delivery](junior-to-senior-1/performance/minimized-delivery.md)
 
 ## SECURITY
 
