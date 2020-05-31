@@ -53,3 +53,17 @@ C. change the package.json to the desired version & run npm install
 
 Default arguments only provide default values for `undefined` arguments. Other "falsy" values such as `''`, `""`, `false`, `null`, `0`, and `NaN`, will not be replaced by a default value.
 
+## 7. CSS
+
+**Regular CSS Pros and Cons**
+
+Pros: Better mental image as CSS in CSS file and JS in JS file. 
+
+Cons: CSS share one single global namespace as it was imported at the top of the HTML code
+
+**CSS in JS Pros and Cons**
+
+Pros: Encapsulation, more effective performance
+
+Cons: CSS is inside JS
+
