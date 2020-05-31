@@ -90,6 +90,11 @@
   * [God Class](refactoring/code-smells/god-class.md)
   * [Long Parameter List](refactoring/code-smells/long-parameter-list.md)
 
+## Junior to Senior <a id="junior-to-senior-1"></a>
+
+* [Performance](junior-to-senior-1/performance/README.md)
+  * [Minimized Files and Images](junior-to-senior-1/performance/minimized-files-and-images.md)
+
 ## SECURITY
 
 * [Encryption](security/encryption.md)
