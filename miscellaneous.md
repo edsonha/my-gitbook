@@ -61,7 +61,7 @@ Pros: Better mental image as CSS in CSS file and JS in JS file.
 
 Cons: CSS share one single global namespace as it was imported at the top of the HTML code
 
-**CSS in JS Pros and Cons**
+**CSS in JS Pros and Cons \(Similar to style={ } in the React, but this method has limited selector i.e. not available for onHover etc\)**
 
 Pros: Encapsulation, more effective performance
 
