@@ -31,7 +31,7 @@ console.log(cache);
 console.log("-----------");
 console.log(2, memoizeAddTo80(6));
 
-// With caching and closure
+// With caching and closure - the idea is to put cache inside the function and use closure to remember the cache
 function memoizeAddTo80() {
   let cache = {}; //without return function below, everytime we run, we will get empty cache object
   return function(n) {
