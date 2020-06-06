@@ -82,3 +82,9 @@ Session storage persists throughout the session. So as long as our tab is open e
 
 Local storage will persist until we clear it out. Meaning that if we close our window close our browser will always have access to it
 
+## 4. Code-Splitting
+
+Problem: The bigger the bundle.js file, the longer it will take to parse and compile before your Web site becomes interactive.
+
+Solution: Code-splitting or we split the JS file till we really need it. The way to do it is to put the dynamic import statement on below page so it'll only import when that piece of code is requesting it and this happens underneath the hood with webpack. Two types of code-splitting: route-based code-splitting and component-based code-splitting. So the idea is how can we ship the least amount of JavaScript to the user.
+
