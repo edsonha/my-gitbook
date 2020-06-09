@@ -77,9 +77,10 @@ let dog = {} as CatArmy;
 //without "as CatArmy", you will not be able to access dog.count
 dog.count;
 
-//12. Interface - create your own new type for an object. In the example below, 
+//12. Interface - create your own new TYPE for an object. In the example below, 
 //you are telling that the "robots" parameter to have all the properties and types 
-//indicated in RobotArmy
+//indicated in RobotArmy. So it create new Type of RobotArmy because RobotArmy type
+//is not in Typescript. We create it.
 interface RobotArmy {
   count: number;
   type: string;
