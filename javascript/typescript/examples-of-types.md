@@ -94,10 +94,20 @@ type RobotArmy2 = {
   magic?: string;
 };
 
+//example 1:
 let fightRobotArmy = (robots: RobotArmy) => {
   console.log("FIGHT!");
 };
-fightRobotArmy({ count: 1, type: "dragon" }); //can still pass without magic 
+fightRobotArmy({ count: 1, type: "dragon" }); //can still pass without magic and
+//console.log FIGHT
+
+//example 2:
+let fightRobotArmy = (robots: RobotArmy) => {
+  console.log(robots.type);
+};
+fightRobotArmy({ count: 1, type: "dragon" }); //can still pass without magic and
+//console.log dragon
+
 
 //function above is same as saying below
 let fightRobotArmy2 = (robots: {
