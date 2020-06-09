@@ -15,6 +15,9 @@ let favoriteQuote: string = `I'm not old, I'm only ${age}`;
 let pets: string[] = ["cat", "mouse", "dragon"];
 let pets2: Array<string> = ["pig", "lion", "dragon"];
 
+//Object
+let wizard: object = { name: "john" }
+
 //5. Tuple - a syntax that has different types inside it
 let basket: [string, number, boolean];
 basket = ["basketball", 10, true];
