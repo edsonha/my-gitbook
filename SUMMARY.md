@@ -93,6 +93,7 @@
 ## Junior to Senior <a id="junior-to-senior-1"></a>
 
 * [CI/CD](junior-to-senior-1/ci-cd.md)
+* [SPA vs Server-Side Rendering](junior-to-senior-1/spa-vs-server-side-rendering.md)
 * [Performance](junior-to-senior-1/performance/README.md)
   * [Optimized Code](junior-to-senior-1/performance/optimized-code.md)
   * [Critical Render Path](junior-to-senior-1/performance/critical-render-path.md)
