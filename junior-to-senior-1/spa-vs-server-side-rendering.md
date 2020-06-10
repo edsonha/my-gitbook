@@ -20,7 +20,8 @@ Pro
 
 Cons
 
-* Lower subsequent load 
+* Lower subsequent load because of full page reload 
+* Many requests to server
 
 **Use Cases:**
 
