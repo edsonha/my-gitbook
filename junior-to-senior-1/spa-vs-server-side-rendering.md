@@ -4,11 +4,11 @@
 
 Pro
 
-* Faster subsequent load because all assets are downloaded
+* Faster subsequent load because all assets are downloaded. Only part of the web got re-render.
 
 Cons
 
-* Slower initial page load
+* Slower initial page load as you need to download many files including JS.
 
 **Server-Side-Rendering**
 
