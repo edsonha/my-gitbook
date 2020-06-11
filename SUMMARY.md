@@ -97,7 +97,7 @@
   * [HTTPS](junior-to-senior-1/security/https.md)
   * [3rd Party Library](junior-to-senior-1/security/3rd-party-library.md)
   * [Injection](junior-to-senior-1/security/injection.md)
-  * [Code Secret, Secure Header](junior-to-senior-1/security/code-secret-secure-header.md)
+  * [Code Secret, Secure Header, Access Control](junior-to-senior-1/security/code-secret-secure-header.md)
 * [CI/CD](junior-to-senior-1/ci-cd.md)
 * [SPA vs Server-Side Rendering](junior-to-senior-1/spa-vs-server-side-rendering.md)
 * [Performance](junior-to-senior-1/performance/README.md)
