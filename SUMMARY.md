@@ -93,6 +93,7 @@
 ## Junior to Senior <a id="junior-to-senior-1"></a>
 
 * [Security](junior-to-senior-1/security/README.md)
+  * [Logging](junior-to-senior-1/security/logging.md)
   * [3rd Party Library](junior-to-senior-1/security/3rd-party-library.md)
   * [Injection](junior-to-senior-1/security/injection.md)
 * [CI/CD](junior-to-senior-1/ci-cd.md)
