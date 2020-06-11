@@ -94,7 +94,7 @@
 
 * [Security](junior-to-senior-1/security/README.md)
   * [Logging](junior-to-senior-1/security/logging.md)
-  * [HTTPS](junior-to-senior-1/security/https.md)
+  * [HTTPS, Cross-Site-Scripting \(XSS\) and Cross-Site-Request-Forgery \(CSRF\)](junior-to-senior-1/security/https.md)
   * [3rd Party Library](junior-to-senior-1/security/3rd-party-library.md)
   * [Injection](junior-to-senior-1/security/injection.md)
   * [Code Secret, Secure Header, Access Control, Data Management, Authentication](junior-to-senior-1/security/code-secret-secure-header.md)
