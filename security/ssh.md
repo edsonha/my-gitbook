@@ -12,7 +12,7 @@ The advantage of SSH is the use of encryption to ensure secure transfer of infor
 
 The foundation of SSH are
 
-1. Diffie-Hellman Key Exchange - used only to share secret key
+1. Diffie-Hellman Key Exchange - used only to share public key
 2. Arrive at symmetric key and use this for communication because it is faster than asymmetric encryption
 3. Hashing to make sure no message is tampered
 4. Authentication using password or get authenticated using RSA which allows us to provide the identity of a person without a password.
