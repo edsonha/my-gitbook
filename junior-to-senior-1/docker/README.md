@@ -6,7 +6,7 @@ Companies uses micro-services and have their products composed of multiple layer
 
 The problem with micro-services is each service may have its own requirements from different node versions to conflicting library dependencies. And when you add in the fact that every developer's machine and environment is different, it can be challenged to onboard new developers quickly or run this service on another machine. So, Docker helps us create these containers around our services.
 
-![](../.gitbook/assets/1.png)
+![](../../.gitbook/assets/1.png)
 
 **History**
 
@@ -31,5 +31,5 @@ Characteristics:
 
 To summarize, Docker bundles your application into an image - a standalone executable package and Docker executes this image in this container and the environment inside the container is completely isolated from that of the host machine.
 
-![Creating many containers as you scale up and use Load Balancer to distribute request](../.gitbook/assets/2.png)
+![Creating many containers as you scale up and use Load Balancer to distribute request](../../.gitbook/assets/2.png)
 
