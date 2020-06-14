@@ -36,13 +36,13 @@ docker-compose build
 // build the docker-compose file
 
 docker-compose run smart-brain-api
-// run the smart-brain-api service
+// run the smart-brain-api service (only one service)
 
 docker-compose down
 // to take down container running in the background
 
 docker-compose up
-// to run the service
+// to run the service (bring up all the services that we put on docker-compose file)
 
 docker-compose up --build
 // to build and run service
