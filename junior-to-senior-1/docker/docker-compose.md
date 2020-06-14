@@ -33,7 +33,9 @@ Working directory is the directory of your working file. \(In this case, should 
 
 Ports is for port binding.
 
-Volumes is to have a connection or mounting whatever we have on our computer to the doctor container. \(aka to watch any changes\). Volume consist of ./ \(root directory on my local machine\) and I want to map it to the working directory that we have in our container \(/usr/src/smart-brain-api\). If there is an issue with update of nodemon, update the package.json file using "start": "nodemon -L server.js"
+Volumes is to have a connection or mounting whatever we have on our computer to the doctor container. \(aka to watch any changes\). Volume consist of ./ \(root directory on my local machine\) and I want to map it to the working directory that we have in our container \(/usr/src/smart-brain-api\). If there is an issue with update of nodemon, update the package.json file using "start": "nodemon -L server.js".
+
+Volume allows us to access to the file system of the docker container. So, by putting volumes, we are having these files in our local computer mapped to where the container is the host file system. It is going to see the changes and update nodemon.
 
 ```text
 docker-compose build
