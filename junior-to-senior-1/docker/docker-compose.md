@@ -17,6 +17,8 @@ services:
     working_dir: /usr/src/smart-brain-api
     ports:
       - "3001:3001"
+    volumes:
+      - ./:/usr/src/smart-brain-api
 ```
 
 Version is the docker compose version based on your docker version \(docker -v\).
@@ -30,6 +32,8 @@ Command is a command when the service starts.
 Working directory is the directory of your working file. \(In this case, should be same as dockerfile working directory\)
 
 Ports is for port binding.
+
+Volumes is to have a connection or mounting whatever we have on our computer to the doctor container. \(aka to watch any changes\). Volume consist of ./ \(root directory on my local machine\) and I want to map it to the working directory that we have in our container \(/usr/src/smart-brain-api\). If there is an issue with update of nodemon, update the package.json file using "start": "nodemon -L server.js"
 
 ```text
 docker-compose build
@@ -46,6 +50,12 @@ docker-compose up
 
 docker-compose up --build
 // to build and run service
+
+docker-compose up -d
+// To bring up all the services in the background
+
+docker-compose exec smart-brain-api
+// To enter the bash of the smart-brain-api after running in the background
 ```
 
 
