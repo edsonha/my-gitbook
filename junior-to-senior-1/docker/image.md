@@ -15,7 +15,7 @@ The second command is to the CMD or command instruction tells us what to run in 
 ```bash
 docker build -t firstcontainer .
 
-// to run docker build
+// to build docker image
 // t = tag; which you can name whatever you like
 // . means it is to build everything
 ```
