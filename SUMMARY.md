@@ -93,7 +93,7 @@
 ## Junior to Senior <a id="junior-to-senior-1"></a>
 
 * [Docker](junior-to-senior-1/docker/README.md)
-  * [Image](junior-to-senior-1/docker/image.md)
+  * [Docker Command](junior-to-senior-1/docker/image.md)
 * [Security](junior-to-senior-1/security/README.md)
   * [Logging](junior-to-senior-1/security/logging.md)
   * [HTTPS, Cross-Site-Scripting \(XSS\) and Cross-Site-Request-Forgery \(CSRF\)](junior-to-senior-1/security/https.md)

@@ -1,4 +1,4 @@
-# Image
+# Docker Command
 
 Docker Image file is called Dockerfile.
 
