@@ -48,7 +48,7 @@ ADD deploy_schemas.sql /docker-entrypoint-initdb.d/
 
 From is to download the postgres version.
 
-Get the sql file from /tables/ folder and map it to the container folder, /docker-entrypoint-initdb.d/tables/
+Get the sql file from /tables/ folder and map it to the container folder, /docker-entrypoint-initdb.d/tables/ \(We will do the same later for the seed data\)
 
 Run deploy\_schemas.sql into the main container folder
 
