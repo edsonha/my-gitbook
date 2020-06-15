@@ -95,6 +95,7 @@
 * [Docker](junior-to-senior-1/docker/README.md)
   * [Docker Command](junior-to-senior-1/docker/image.md)
   * [Docker Compose](junior-to-senior-1/docker/docker-compose.md)
+  * [Docker Compose - Postgres](junior-to-senior-1/docker/docker-compose-postgres.md)
 * [Security](junior-to-senior-1/security/README.md)
   * [Logging](junior-to-senior-1/security/logging.md)
   * [HTTPS, Cross-Site-Scripting \(XSS\) and Cross-Site-Request-Forgery \(CSRF\)](junior-to-senior-1/security/https.md)
@@ -113,7 +114,6 @@
 
 * [Encryption](security/encryption.md)
 * [SSH](security/ssh.md)
-* [PostgreSQL](postgresql.md)
 * [Command](command.md)
 
 ## Cheatsheet <a id="git"></a>
