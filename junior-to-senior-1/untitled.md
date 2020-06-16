@@ -55,3 +55,23 @@ LRANGE mylist 0 2 // there, 10, hello
 LPOP mylist // there
 ```
 
+**Set and Sorted Set:**
+
+Set is unordered collection of string and sorted set is ordered. In set, there is no duplicate value.
+
+The difference between set and sorted set is in sorted set, for every member of a sorted set is associated with a score and this score allows it to be ordered from smallest to greatest.
+
+```yaml
+SADD myset 1 2 3 4 5
+SMEMBERS myset // 1 2 3 4 5
+SADD myset 1 2 4 6 // 1 2 3 4 5 6
+SISMEMBER myset 5 // 1 or yes
+
+
+ZADD team 50 "Alice"
+ZADD team 40 "Bob"
+ZADD team 1 "Charlie"
+ZRANGE team 0 2 // Charlie Bob Alice
+ZRANK team "Bob" // 1
+```
+
