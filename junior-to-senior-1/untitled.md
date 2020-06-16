@@ -1,4 +1,4 @@
-# Untitled
+# Redis
 
 Redis is Non-SQL database or sometimes we called in-memory database.
 
