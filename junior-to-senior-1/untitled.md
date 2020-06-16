@@ -29,3 +29,16 @@ MSET a 2 b 5 //Multiple Set
 MGET a b //Multiple Get
 ```
 
+**Hash:**
+
+```yaml
+// Similar to JS object
+
+HMSET user id 45 name "John"
+HGET user id
+HGET user name
+HGETALL user //id, 45, name, John
+```
+
+
+
