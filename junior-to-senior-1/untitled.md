@@ -40,5 +40,18 @@ HGET user name
 HGETALL user //id, 45, name, John
 ```
 
+**List:**
 
+*  Insertion is really really fast. Useful when you have long list and you need to add element quickly.
+* Take a bit of time when searching. Use sorted list which is better for searching.
+
+```yaml
+// Similar to linked list
+
+LPUSH mylist 10
+RPUSH mylist hello
+LPUSH mylist there
+LRANGE mylist 0 2 // there, 10, hello
+LPOP mylist // there
+```
 
