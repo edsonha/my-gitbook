@@ -14,3 +14,18 @@ Redis is what we call a key-value store \(similar to how we handle JS Object\)
 * Even though the data is stored in memory, it does take a snapshot occasionally to save the current data contents onto the disk which, is great to recover from, when there's unexpected shutdowns. Although we might lose the some/ latest information.
 * Handle 5 data types: string, hash, list, set and sorted set.
 
+```yaml
+// Examples of simple redis command:
+
+SET name "String"
+GET name 
+EXISTS name
+DEL name
+EXPIRE name ${num}
+SET counter 1000
+INCRBY counter 55 // 1055
+DECR counter //1054
+MSET a 2 b 5 //Multiple Set
+MGET a b //Multiple Get
+```
+
