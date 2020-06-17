@@ -1,5 +1,19 @@
 # AWS
 
+\*\*\*\*
+
+\*\*\*\*
+
+**Example of AWS Flow**
+
+![](../.gitbook/assets/aws-flow.png)
+
+* With our app, we can ****have Cloudfront CDN all over the world so that when a user goes online from anywhere in the world they're served HTML, CSS and JS files from whatever service that is the closest.
+* If the users make a request to our backend REST API which we can put on the EC2 instance.
+* We can store user information in Dynamo DB 
+* When the users submit an image, instead of having it work in EC2 because this machine is already busy listening to connections, we just trigger a lambda function that will take the URL of the image and send it to Clarify to get a response.
+* Once the response is obtained, the response object is stored inside S3 that will be returned to EC2 when ready.
+
 **Monolith vs Microservices**
 
 Monolithic giant infrastructure or code base does everything for us with all the pieces all together in one place running our application and logic.
