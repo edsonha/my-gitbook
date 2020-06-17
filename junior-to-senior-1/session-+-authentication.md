@@ -30,3 +30,11 @@ Characteristics**:**
 * Bigger data is JWT token hold more information.
 * Storing info in JWT can be dangerous.
 
+Local Storage: persist across browser tab
+
+Session Storage : only one browser tab
+
+**Redis + JWT**
+
+Session management with redis and instead of just using the verify with the JWT token, we're going to actually store the JWT token in redis database and by storing it in our database, we have full control to see what tokens are available, what tokens we've given out and also revoke them any time that we want. And this gives us a lot of power and maneuverability.
+
