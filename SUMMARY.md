@@ -92,6 +92,7 @@
 
 ## Junior to Senior <a id="junior-to-senior-1"></a>
 
+* [AWS](junior-to-senior-1/aws.md)
 * [Session + Authentication](junior-to-senior-1/session-+-authentication.md)
 * [Redis](junior-to-senior-1/untitled.md)
 * [Docker](junior-to-senior-1/docker/README.md)
