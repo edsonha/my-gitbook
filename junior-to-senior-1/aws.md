@@ -1,8 +1,20 @@
 # AWS
 
-\*\*\*\*
+AWS is Infrastructure as a Service or Platform as a Service. 
 
-\*\*\*\*
+The benefits are:
+
+* You select specific solution and only pay for exactly what you use
+* Fast, high performance and scalability
+* Ability to grow and shrink our infrastructure need based on our needs
+
+**DevOps**
+
+* EC2 - Think of it like a server that host your backend REST API
+* S3 - Object storage service that can be accessed using key or ID and with that ID you can access whatever object that ID stores and it enables us to upload and download pretty much any file
+* Lambda - We simply upload our code and Lamda takes care of everything required to run and scale your code. For example, a high request at the same time, lambda automatically is going to scale and will just create multiple instances of this function so that we can handle these requests with high availability.
+* DynamoDB - NonSQL database \(key value storage\)
+* Cloudfront - Web server that speeds up distribution of our static files and delivers this content through a world wide network of data centers exactly like a CDN does.
 
 **Example of AWS Flow**
 
