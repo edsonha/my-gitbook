@@ -111,6 +111,7 @@
 * [Performance](junior-to-senior-1/performance/README.md)
   * [Optimized Code](junior-to-senior-1/performance/optimized-code.md)
   * [Critical Render Path](junior-to-senior-1/performance/critical-render-path.md)
+  * [Backend Optimization](junior-to-senior-1/performance/backend-optimization.md)
   * [Minimized Files and Images](junior-to-senior-1/performance/minimized-files-and-images.md)
   * [Minimized Delivery](junior-to-senior-1/performance/minimized-delivery.md)
 
