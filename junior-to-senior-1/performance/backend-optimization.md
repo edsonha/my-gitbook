@@ -21,5 +21,5 @@ Benefits:
 
 4 Caching
 
-5. Load Balancer using NGINX
+5. Load Balancer using NGINX, but usually provided by cloud provider like AWS out of the box
 
