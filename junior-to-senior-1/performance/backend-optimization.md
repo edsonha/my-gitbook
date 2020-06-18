@@ -10,3 +10,16 @@ Benefits:
 
 2. GZIP can optimize performance because it makes the files smaller and very easy to implement. For example in Express App, we have middleware called compression.
 
+3. Database Scaling principles:
+
+* Identify inefficient queries
+* Increase memory
+* Vetical Scaling \(Redis\)
+* Sharding \(Separating database based on certain criteria\)
+* More Database \(Distributed\)
+* Database type
+
+4 Caching
+
+5. Load Balancer using NGINX
+
