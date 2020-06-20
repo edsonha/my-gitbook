@@ -119,6 +119,9 @@
 
 * [Encryption](security/encryption.md)
 * [SSH](security/ssh.md)
+
+---
+
 * [Command](command.md)
 
 ## Cheatsheet <a id="git"></a>
