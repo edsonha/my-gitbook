@@ -97,6 +97,7 @@
 * [Session + Authentication](junior-to-senior-1/session-+-authentication.md)
 * [Redis](junior-to-senior-1/untitled.md)
 * [Docker](junior-to-senior-1/docker/README.md)
+  * [Operating System - Extra](junior-to-senior-1/docker/operating-system-extra.md)
   * [Docker Command](junior-to-senior-1/docker/image.md)
   * [Docker Compose](junior-to-senior-1/docker/docker-compose.md)
   * [Docker Compose - Postgres](junior-to-senior-1/docker/docker-compose-postgres.md)
