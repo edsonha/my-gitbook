@@ -30,6 +30,10 @@ Characteristics:
 * Docker Hub is similar to NPM in JS land - it provides a store-like website where you can search and download images to use
 * Image also has a file system just like we have files on our computer and that's what we call a volume.
 
+But it is not one technology over the other. The best practice is to use both tech: virtualization and containers to utilize all the advantages. We may not provision for many virtual machine as before because one virtual machine will have hundreds of container instead of previous one VM for one container.
+
+![](../../.gitbook/assets/1%20%281%29.png)
+
 To summarize, Docker bundles your application into an image - a standalone executable package and Docker executes this image in this container and the environment inside the container is completely isolated from that of the host machine.
 
 ![Creating many containers as you scale up and use Load Balancer to distribute request](../../.gitbook/assets/2.png)
