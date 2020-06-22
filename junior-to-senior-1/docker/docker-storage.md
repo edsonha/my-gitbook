@@ -2,7 +2,7 @@
 
 How docker store data on the local file system? When you install docker on a system, it creates this folder structure at directory: var/lib/docker
 
-![](../../.gitbook/assets/2%20%281%29.png)
+![](../../.gitbook/assets/2%20%282%29.png)
 
 When we run docker build, we are building image layers to form final docker image and these image layers are read only. You can modify them only by initiating a new build.
 

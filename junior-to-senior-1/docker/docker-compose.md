@@ -1,5 +1,9 @@
 # Docker Compose
 
+![This will not work if we do not link them together](../../.gitbook/assets/1%20%282%29.png)
+
+![Translating docker run command to docker compose](../../.gitbook/assets/2%20%281%29.png)
+
 Docker Compose to launch separate services under one command. So, it launches multiple container for each services: API Server, Postgres, Redis, etc. In other word, it orchestrate our application services during development.
 
 Difference between Dockerfile and Docker-compose is Dockerfile is for one specific container only \(or one service\) and the docker-compose file is for composing more docker containers together \(many services\).
