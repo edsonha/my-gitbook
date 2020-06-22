@@ -4,7 +4,7 @@ The idea is to have project run on a different machine / environment without any
 
 Companies uses micro-services and have their products composed of multiple layers. These layers can be considered services, each with their own container doing its own thing and communicating with each other to make the whole system work.
 
-The problem with micro-services is each service may have its own requirements from different node versions to conflicting library dependencies. And when you add in the fact that every developer's machine and environment is different, it can be challenged to onboard new developers quickly or run this service on another machine. So, Docker helps us create these containers around our services.
+The problem with micro-services is each service may have its own requirements from different node versions to conflicting library dependencies. And when you add in the fact that every developer's machine and environment is different, it can be challenged to onboard new developers quickly or run this service on another machine. So, Docker come up with a solution that will run each application in a separate container with its own dependencies and its own libraries. Different containers are run on completely isolated environment but sharing the same OS kernel.
 
 ![](../../.gitbook/assets/1.png)
 
@@ -19,13 +19,14 @@ Docker containers wrap up the software in a complete file system that contains e
 Advantages: 
 
 * Lightweight compare to VM because instead of virtual OS, it rely on host OS.
+* Faster boot-up time
 * Can only run single application on each container.
 * Can be scaled up easily as you create more and more containers and use container orchestration like Kubernetes 
 
 Characteristics:
 
 * Each container has an image - Docker use this to bundle your application into a standalone executable package that can live inside of a container. For example, we want a node server, so this image is read by docker and it generates container that run node server for us.
-* Each container environment is isolated from host machines
+* Each container environment is isolated from host machines. But compared to VM's complete isolation from each other, container has less isolation as more resources are shared between the containers, like kernel.
 * Docker Hub is similar to NPM in JS land - it provides a store-like website where you can search and download images to use
 * Image also has a file system just like we have files on our computer and that's what we call a volume.
 
