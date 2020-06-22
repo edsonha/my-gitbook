@@ -99,6 +99,7 @@
 * [Docker](junior-to-senior-1/docker/README.md)
   * [Operating System - Extra](junior-to-senior-1/docker/operating-system-extra.md)
   * [Dockerfile - Docker Image](junior-to-senior-1/docker/dockerfile-docker-image.md)
+  * [Docker Storage](junior-to-senior-1/docker/docker-storage.md)
   * [Docker Network](junior-to-senior-1/docker/docker-network.md)
   * [Docker Command](junior-to-senior-1/docker/image.md)
   * [Docker Compose](junior-to-senior-1/docker/docker-compose.md)
