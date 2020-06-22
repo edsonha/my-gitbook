@@ -101,6 +101,7 @@
   * [Dockerfile - Docker Image](junior-to-senior-1/docker/dockerfile-docker-image.md)
   * [Docker Storage](junior-to-senior-1/docker/docker-storage.md)
   * [Docker Network](junior-to-senior-1/docker/docker-network.md)
+  * [Docker Registry](junior-to-senior-1/docker/docker-registry.md)
   * [Docker Command](junior-to-senior-1/docker/image.md)
   * [Docker Compose](junior-to-senior-1/docker/docker-compose.md)
   * [Docker Compose - Postgres](junior-to-senior-1/docker/docker-compose-postgres.md)
