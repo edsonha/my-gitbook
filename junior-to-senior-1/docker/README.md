@@ -38,3 +38,5 @@ To summarize, Docker bundles your application into an image - a standalone execu
 
 ![Creating many containers as you scale up and use Load Balancer to distribute request](../../.gitbook/assets/2.png)
 
+What can you containers? You can containerize everything and in the future that is how application is run, there is no more installing, they are just going to run it using docker and easily delete without extra clean up
+
