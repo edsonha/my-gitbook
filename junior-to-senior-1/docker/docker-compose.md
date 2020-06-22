@@ -4,6 +4,20 @@
 
 ![Translating docker run command to docker compose](../../.gitbook/assets/2%20%281%29.png)
 
+For your own application that is not available on the docker registry, if we want docker compose to run docker build instead of trying to pull an image, we can replace the image line with the build line and specify the location of a directory which contains the application code and the dockerfile with instruction to build the docker images. For example, if the voting app have all the application code in a folder named ./vote, then you write build: ./vote
+
+![](../../.gitbook/assets/3.png)
+
+Version 1 - you cannot deploy to other network \(other than the default bridge network and use links as communication between containers\) and specify the order of the services
+
+Version 2 - you encapsulate all the services under services. You must specify the version at the top of the file. There is dedicated bridge network for this application and then attached all containers the new network, so they can communicate with each other using each other service name, so no need to use the links. You can add depend\_on property to the application to establish the dependencies
+
+![](../../.gitbook/assets/4.png)
+
+Lets say we want to create a front-end network dedicated for traffic from users and back-end network dedicated for traffic within the application. We then connect the front facing app \(voting app and result app\) to the FE network and all components to the internal back-end network
+
+**Docker Compose**
+
 Docker Compose to launch separate services under one command. So, it launches multiple container for each services: API Server, Postgres, Redis, etc. In other word, it orchestrate our application services during development.
 
 Difference between Dockerfile and Docker-compose is Dockerfile is for one specific container only \(or one service\) and the docker-compose file is for composing more docker containers together \(many services\).
@@ -11,7 +25,7 @@ Difference between Dockerfile and Docker-compose is Dockerfile is for one specif
 ```text
 Example of docker-compose file
 
-version: "3.8"
+version: 3.8
 
 services:
   smart-brain-api:
