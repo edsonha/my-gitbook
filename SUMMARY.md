@@ -96,6 +96,7 @@
   * [Lambda](junior-to-senior-1/aws/lambda.md)
 * [Session + Authentication](junior-to-senior-1/session-+-authentication.md)
 * [Redis](junior-to-senior-1/untitled.md)
+* [Kubernetes](junior-to-senior-1/kubernetes.md)
 * [Docker](junior-to-senior-1/docker/README.md)
   * [Operating System - Extra](junior-to-senior-1/docker/operating-system-extra.md)
   * [Dockerfile - Docker Image](junior-to-senior-1/docker/dockerfile-docker-image.md)
