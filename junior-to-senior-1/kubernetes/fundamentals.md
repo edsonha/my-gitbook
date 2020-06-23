@@ -20,7 +20,7 @@ When you install kubernetes on a system, you are actually installing these follo
 
   cluster.
 
-* etcd server - Distributed reliable key value. Store all data used to manage the cluster. It implements lock within the cluster to ensure there are no conflicts between the masters.
+* etcd server - Distributed reliable key value. Store all data used to manage the cluster. It implements logs within the cluster to ensure there are no conflicts between the masters.
 * kubelet service - Agent that runs on each node in the cluster. The agent is responsible for making sure that the containers are running on the nodes as expected. 
 * container runtime - Underlying software that is used to run the containers. In this case, it is docker.
 * controller - The brain behind the container orchestration \(i.e. monitor the health of the node and replace failed node\) 
