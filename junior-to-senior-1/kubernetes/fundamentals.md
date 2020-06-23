@@ -26,3 +26,18 @@ When you install kubernetes on a system, you are actually installing these follo
 * controller - The brain behind the container orchestration \(i.e. monitor the health of the node and replace failed node\) 
 * scheduler - Responsible for distributing works or container across multiple nodes. It looks for newly created containers and assign them to nodes
 
+**Different components are installed in Master vs Worker Node**
+
+![](../../.gitbook/assets/1%20%283%29.png)
+
+Worker Node 
+
+* To run docker container on the system, we need container runtime installed**.** So, in this case we use Docker
+* Has kubelet agent that is interacting with the master to provide health information of the worker node and carry out action required by the master on worker node.
+
+Master 
+
+* Has a kube-apiserver
+* Had etcd to store all information of worker nodes and other master 
+* Has controller and scheduler
+
