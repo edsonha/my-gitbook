@@ -12,4 +12,5 @@ Some benefits of container orchestration:
 4. Load balancing user requests across different host 
 5. Provide support for sharing storage between the hosts 
 6. Support configuration management and security within the cluster
+7. Test new features of your application by only upgrading a percentage of the instances through AB testing method
 
