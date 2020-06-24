@@ -13,7 +13,9 @@ Deployment is higher rank than the replica set.
 ```text
 kubectl create -f deployment-definition.yml
 
-kubectl get deployments
+kubectyl describe deployments
+
+kubectl get deployment myapp-deployment
 
 kubectl get all
 ```
