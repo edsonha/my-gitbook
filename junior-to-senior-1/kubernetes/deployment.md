@@ -6,7 +6,7 @@ In production,  you usually only create deployment definition yml file \(no need
 * Roll back when necessary
 * Pause, make changes and resume so that the changes are rolled out together. These changes are multiple command such as upgrading the underlying web server version and modify resource allocation. So you do not want to apply the changes immediately after each command
 
-![](../../.gitbook/assets/2%20%284%29.png)
+![](../../.gitbook/assets/2%20%285%29.png)
 
 Deployment is higher rank than the replica set.
 

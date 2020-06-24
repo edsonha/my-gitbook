@@ -97,6 +97,7 @@
 * [Session + Authentication](junior-to-senior-1/session-+-authentication.md)
 * [Redis](junior-to-senior-1/untitled.md)
 * [Kubernetes](junior-to-senior-1/kubernetes/README.md)
+  * [Networking](junior-to-senior-1/kubernetes/networking.md)
   * [Deployment](junior-to-senior-1/kubernetes/deployment.md)
   * [Replica Set](junior-to-senior-1/kubernetes/replica-set.md)
   * [YAML](junior-to-senior-1/kubernetes/yaml.md)
