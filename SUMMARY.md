@@ -97,6 +97,7 @@
 * [Session + Authentication](junior-to-senior-1/session-+-authentication.md)
 * [Redis](junior-to-senior-1/untitled.md)
 * [Kubernetes](junior-to-senior-1/kubernetes/README.md)
+  * [YAML](junior-to-senior-1/kubernetes/yaml.md)
   * [Kubectl](junior-to-senior-1/kubernetes/kubectl.md)
   * [Pods](junior-to-senior-1/kubernetes/pods.md)
   * [Fundamentals](junior-to-senior-1/kubernetes/fundamentals.md)
