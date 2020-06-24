@@ -98,6 +98,7 @@
 * [Redis](junior-to-senior-1/untitled.md)
 * [Kubernetes](junior-to-senior-1/kubernetes/README.md)
   * [Kubectl](junior-to-senior-1/kubernetes/kubectl.md)
+  * [Pods](junior-to-senior-1/kubernetes/pods.md)
   * [Fundamentals](junior-to-senior-1/kubernetes/fundamentals.md)
 * [Docker](junior-to-senior-1/docker/README.md)
   * [Operating System - Extra](junior-to-senior-1/docker/operating-system-extra.md)
