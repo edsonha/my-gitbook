@@ -11,7 +11,7 @@ The replica set can replicate another pod of the same instance inside a worker n
 
 The difference between replication controller and replica set is the former is old method and replica set is new and recommend way, even though they have the same purpose.
 
-![Example of replicaset-definition.yml](../../.gitbook/assets/1%20%285%29.png)
+![Example of replicaset-definition.yml](../../.gitbook/assets/1%20%286%29.png)
 
 The most crucial part is the spec portion because it consist of three things:
 
