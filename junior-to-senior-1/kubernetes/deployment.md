@@ -6,7 +6,7 @@ In production,  you usually only create deployment definition yml file \(no need
 * Roll back when necessary
 * Pause, make changes and resume so that the changes are rolled out together. These changes are multiple command such as upgrading the underlying web server version and modify resource allocation. So you do not want to apply the changes immediately after each command
 
-![](../../.gitbook/assets/2%20%285%29.png)
+![](../../.gitbook/assets/2%20%286%29.png)
 
 Deployment is higher rank than the replica set.
 
@@ -51,7 +51,7 @@ kubectl set image deployment/myapp-deployment nginx-container=nginx:1.9.1
 // but does not change the definition file
 ```
 
-![Under the hood, upgrade is creating another replica set and replacing the pod one by one](../../.gitbook/assets/1%20%285%29.png)
+![Under the hood, upgrade is creating another replica set and replacing the pod one by one](../../.gitbook/assets/1%20%286%29.png)
 
 ```text
 kubectl get replicaset
