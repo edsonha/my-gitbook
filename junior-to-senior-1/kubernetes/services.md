@@ -26,7 +26,7 @@ There are 3 different kind of services:
 
 Service is like a virtual server inside the node and has its own IP add called Cluster IP \(in the example above, the IP add is 10.106.1.12\).
 
-The only mandatory field of ports is port. If target port is not defined, it is assumed to be same as port. If nodePort is node defined, it is assigned randomly a port within the valid range of 30000 - 32767.
+The only mandatory field of ports is port. If target port is not defined, it is assumed to be same as port. If nodePort is not defined, it is assigned randomly a port within the valid range of 30000 - 32767.
 
 Ports field in the yml file are in array meaning you can create multiple mapping port within a single service.
 
