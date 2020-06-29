@@ -232,7 +232,7 @@ Dictionary<string, int> prices = new Dictionary<string, int> (5);
 ```csharp
 enum Breed { Bulldog, Boxer, Chihuahua };		
 
-class Dog : Animal		
+class Dog
 {		
 	public Breed breed;	
 	public Dog(Breed _breed)	
@@ -241,7 +241,30 @@ class Dog : Animal
 	}		
 }		
 
-Dog spotty = new Dog(Breed.Bulldog / Breed.Boxed / Breed.Chihuahua)	
+Dog spotty = new Dog(Breed.Bulldog / Breed.Boxer/ Breed.Chihuahua)
+Console.WriteLine(spotty.breed);	
+
+
+enum CarColor : byte // initialize to byte, the default is integer
+{
+  Orange = 1, // initialize to 1, the default is 0
+  Blue,
+  Green,
+  Red,
+  Yellow
+}
+
+static void Main(string[] args)
+{
+  CarColor car1 = CarColor.Yellow;
+  PaintCar(car1);
+}
+
+static void PaintCar(CarColor cc)
+{
+  Console.WriteLine("The car was painted {0} with the code {1}",
+  cc, (byte)cc);
+}
 ```
 
 **Interface**
