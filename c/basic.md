@@ -35,6 +35,14 @@ public static void Swap(ref int num1, ref int num2)
 }
 ```
 
+**Params**
+
+```csharp
+static double GetSumMore(int num1, int num2, params double[] nums)
+
+GetSumMore( 1, 2, 3, 4) // num1 is 1, num2 is 2 and the rest is params (3,4)
+```
+
 **Array**
 
 ```csharp
