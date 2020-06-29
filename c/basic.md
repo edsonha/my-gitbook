@@ -43,6 +43,42 @@ public static void Swap(ref int num1, ref int num2)
   num1 = num2;
   num2 = temp;
 }
+
+
+
+static void Main(string[] args)
+{
+	int a = 1;
+	int b = a;
+
+	Console.WriteLine(a); // 1
+	Console.WriteLine(b); // 1
+	
+	a = 5;
+
+	Console.WriteLine(a); // 5
+	Console.WriteLine(b); // 1, not affected by the change
+
+	Test(a);
+
+	Console.WriteLine(a); // 5, not affected by the method
+	Console.WriteLine(b); // 1
+
+	int[] c = { 10 };
+	int[] d = c;
+
+	Console.WriteLine(c[0]); // 10
+	Console.WriteLine(d[0]); // 10
+
+	d[0] = 20;
+
+	Console.WriteLine(c[0]); // 20 // affected by the change
+	Console.WriteLine(d[0]); // 20
+}
+static void Test(int a)
+{
+	a = 100;
+}
 ```
 
 **Params**
