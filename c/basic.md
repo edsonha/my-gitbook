@@ -186,6 +186,59 @@ public virtual void  MakeSpecialDish ()	{
 }
 ```
 
+**List, Dictionary**
+
+```csharp
+//Array with dynamic size use List
+List <int> numbers = new List<int> ();
+
+Dictionary<string, int> prices = new Dictionary<string, int> (5);
+
+```
+
+**Enum**
+
+```csharp
+enum Breed { Bulldog, Boxer, Chihuahua };		
+
+class Dog : Animal		
+{		
+	public Breed breed;	
+	public Dog(Breed _breed)	
+	{	
+		breed = _breed
+	}		
+}		
+
+Dog spotty = new Dog(Breed.Bulldog / Breed.Boxed / Breed.Chihuahua)	
+```
+
+**Interface**
+
+Interface is like a contract... Why not use base class? Because you can derive from multiple interfaces
+
+**Generics**
+
+Handle unknown data types
+
+```csharp
+// Generic method inside non-generic class						
+class Utility						
+{						
+	public static bool CompareValues<T01, T02> (T01 value1, T02 value2)					
+	{					
+		return value1.Equals(value2);				
+	}					
+	public static bool CompareTypes<T01, T02> (T01 type1, T02 type2)					
+	{					
+		return typeof(T01).Equals(typeof(T02));				
+	}					
+}						
+						
+Console.WriteLine(Utility.CompareValues(10, "Hello"));		 // FALSE
+Console.WriteLine(Utility.CompareTypes("World", "Hello")); // TRUE
+```
+
 **Defensive Programming - Mosh**
 
 ```csharp
