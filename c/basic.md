@@ -14,14 +14,6 @@ Data types by default cannot have a value of null. When null is needed, add ques
 
 int? randNum = null;
 
-```text
-        // Check for null
-        if(randNum == null)
-        {
-            Console.WriteLine("randNum is null");
-        }
-```
-
 **Pass by Value vs Pass by Reference**
 
 ```csharp
