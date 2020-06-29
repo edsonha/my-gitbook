@@ -12,6 +12,29 @@ y = 5 // initialization
 
 int y = 5 // declaration + initialization
 
+**Pass by Value vs Pass by Reference**
+
+```csharp
+// By default values are passed into a method
+// and not a reference to the variable passed
+// Changes made to those values do not effect the variables outside of the method
+
+// To pass by reference:
+int num1 = 10;
+int num2 = 20;
+ 
+Console.WriteLine("Before Swap num1 : {0} num2 : {1}", num1, num2); // 10 and 20
+Swap(ref num1, ref num2);
+Console.WriteLine("After Swap num1 : {0} num2 : {1}", num1, num2);  // 20 and 10
+
+public static void Swap(ref int num1, ref int num2)
+{
+  int temp = num1;
+  num1 = num2;
+  num2 = temp;
+}
+```
+
 **Array**
 
 ```csharp
