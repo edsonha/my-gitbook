@@ -8,6 +8,10 @@ Private fields can only be accessed by methods in the class and they are not acc
 
 Protected fields can only be accessed by methods in the class and by subclasses.
 
+Method overloading is when you have different versions of method 
+
+Method override is when you replace a method
+
 
 
 Data types by default cannot have a value of null. When null is needed, add question mark:
