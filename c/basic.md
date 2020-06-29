@@ -128,7 +128,63 @@ class Movie
 }					
 ```
 
-\*\*\*\*
+**Static - Class Static Attribute and Static Method and Static Class**
+
+```csharp
+// Class static attribute is about the class and not the object. 
+// So, static attribute is shared in all instances.							
+class Song							
+{							
+  public string title;							
+  public string artist;
+  public static int songCount = 0;						
+							
+	public Song (string aTitle, string aArtist ) {						
+		title = aTitle;					
+		artist = aArtist;	
+		songCount++					
+	}						
+	
+	public int getSongCount( ) {						
+		return songCount;					
+	}						
+}							
+							
+Song holiday = new Song ("Holiday", "Green Day", 200);							
+							
+Console.WriteLine(Song.songCount)					// 1		
+Console.WriteLine(holiday.songCount )			// Not accessible		
+Console.WriteLine(holiday.getSongCount()) // Onlt accesible through object method		
+							
+							
+// Static Methods & Class													
+							
+static class usefulTools // Static Class means you cannot create an instance
+{							
+	public static void SayHi( string name )
+	// without the word static, you need to create an object to access the method		
+	{						
+		ConsoleWriteLine("hi" + name)										
+	}						
+}							
+							
+UsefulTools.SayHi("Ben")					
+// So you can just call it from the class without creating an object
+```
+
+**Inheritance**
+
+```csharp
+// Italian chef override method of normal chef
+public override void MakeSpecialDish() {
+  Console.WriteLine("Cook Spagethi");
+}
+
+// Normal chef method that can be overriden by sub-class
+public virtual void  MakeSpecialDish ()	{		
+  Console.WriteLine("Cook BBQ Ribs");
+}
+```
 
 **Defensive Programming - Mosh**
 
