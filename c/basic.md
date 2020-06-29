@@ -4,6 +4,12 @@ C\# is the language
 
 .Net is what we use to execute the code on our computer
 
+Private fields can only be accessed by methods in the class and they are not accessible by subclasses.
+
+Protected fields can only be accessed by methods in the class and by subclasses.
+
+
+
 Data types by default cannot have a value of null. When null is needed, add question mark:
 
 int? randNum = null;
