@@ -4,13 +4,17 @@ C\# is the language
 
 .Net is what we use to execute the code on our computer
 
-Static \(call directly\) Instance method \(create a instance\)
+Data types by default cannot have a value of null. When null is needed, add question mark:
 
-int y // declaration 
+int? randNum = null;
 
-y = 5 // initialization 
-
-int y = 5 // declaration + initialization
+```text
+        // Check for null
+        if(randNum == null)
+        {
+            Console.WriteLine("randNum is null");
+        }
+```
 
 **Pass by Value vs Pass by Reference**
 
