@@ -152,21 +152,15 @@ class Customer
 {
 	public int Id;
 	public string Name;
-	public List<Order> Orders;
+	public readonly List<Order> Orders = new List<Order>(); 
+	// initilize customer with order list and readonly prevent re-initilization
 	
-	public Customer ()
-	{
-		Orders = new List<Order>();
-	}
-
-	public Customer (int id) : this() // called constructor with no param or in this
-	// case the initilization of Order
+	public Customer (int id)
 	{
 		this.Id = id;
 	}
 	
 	public Customer(int id, string name) : this(id) // called constructor with id
-	// which include this.Id = id and also initilization of Order
 	{
 		this.Name = name
 	}
