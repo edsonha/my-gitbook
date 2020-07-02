@@ -77,7 +77,7 @@ static void Test(int a)
 }
 ```
 
-**Params**
+**Params Modifier**
 
 ```csharp
 static double GetSumMore(int num1, int num2, params double[] nums)
