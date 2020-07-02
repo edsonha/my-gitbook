@@ -4,7 +4,7 @@ C\# is the language
 
 .Net is what we use to execute the code on our computer
 
-Private fields can only be accessed by methods in the class and they are not accessible by subclasses.
+Private fields can only be accessed by methods in the class and they are not accessible by subclasses or instantiation.
 
 Protected fields can only be accessed by methods in the class and by subclasses.
 
