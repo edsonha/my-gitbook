@@ -145,6 +145,32 @@ class Book
 		pages = aPages;			
 	}
 }
+
+
+// constructor overloading - Use with caution as it clutter the code
+class Customer
+{
+	public int Id;
+	public string Name;
+	public List<Order> Orders;
+	
+	public Customer ()
+	{
+		Orders = new List<Order>();
+	}
+
+	public Customer (int id) : this() // called constructor with no param or in this
+	// case the initilization of Order
+	{
+		this.Id = id;
+	}
+	
+	public Customer(int id, string name) : this(id) // called constructor with id
+	// which include this.Id = id and also initilization of Order
+	{
+		this.Name = name
+	}
+}
 ```
 
 **Getter and Setter**
