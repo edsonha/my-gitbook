@@ -1,22 +1,44 @@
 # Basic
 
-C\# is the language 
+**Glossary**
 
-.Net is what we use to execute the code on our computer
+```csharp
+Private fields: 
+Can only be accessed by methods in the class (via getter and setter) and 
+they are not accessible by subclasses or instantiation.
 
-Private fields can only be accessed by methods in the class \(via getter and setter\) and they are not accessible by subclasses or instantiation.
+Protected fields:
+Can only be accessed by methods in the class and by subclasses.
 
-Protected fields can only be accessed by methods in the class and by subclasses.
+Read-only fields:
+Set at runtime at constructors and can't be changed.
 
-Method overloading is when you have different versions of method 
+Method overloading:
+When you have different versions of method 
 
-Method override is when you replace a method
+Method override:
+when you replace a method
+```
 
+**Null**
 
-
-Data types by default cannot have a value of null. When null is needed, add question mark:
+```csharp
+Data types by default cannot have a value of null. 
+When null is needed, add question mark:
 
 int? randNum = null;
+```
+
+**Casting**
+
+```csharp
+// If you want to cast from one type to another - conversion
+long num1 = 1234;
+int num2 = (int)num1;
+ 
+Console.WriteLine("Orig : {0} Cast : {1}", num1.GetType(), num2.GetType());
+//Int64 and Int32
+```
 
 **Pass by Value vs Pass by Reference**
 
@@ -88,7 +110,8 @@ GetSumMore( 1, 2, 3, 4) // num1 is 1, num2 is 2 and the rest is params (3,4)
 **Array**
 
 ```csharp
-int[] luckyNumbers = { 4,  7, 10 }					
+int[] luckyNumbers = { 4,  7, 10 }
+var employees = new[] { "Mike", "Paul", "Rick" };					
 // Create array with values
 
 string[] friends = new string[5];					
@@ -218,7 +241,10 @@ class Movie
 		  rating = "NR"			
 	  }				
   }					
-}					
+}			
+
+// You can have the getters and setters likt this and also set the default value
+public string Owner { get; set; } = "No Owner";				
 ```
 
 **Static - Class Static Attribute and Static Method and Static Class**
@@ -243,7 +269,9 @@ class Song
 	}						
 }							
 							
-Song holiday = new Song ("Holiday", "Green Day", 200);							
+Song holiday = new Song ("Holiday", "Green Day", 200);
+// Another way to create object
+Song holiday = new Song () { title= "Holiday", artist = "Green Day" }							
 							
 Console.WriteLine(Song.songCount)					// 1		
 Console.WriteLine(holiday.songCount )			// Not accessible		
