@@ -293,7 +293,7 @@ UsefulTools.SayHi("Ben")
 // So you can just call it from the class without creating an object
 ```
 
-**Inheritance**
+**Inheritance - Is-A relationship \(Dog Class is Animal Class\)**
 
 ```csharp
 // Italian chef override method of normal chef
@@ -304,6 +304,24 @@ public override void MakeSpecialDish() {
 // Normal chef method that can be overriden by sub-class
 public virtual void  MakeSpecialDish ()	{		
   Console.WriteLine("Cook BBQ Ribs");
+}
+```
+
+**Aggregation or Delegate - Has-A relationship \(Animal Class has a Animal Id Info Class\)**
+
+```csharp
+class Animal {
+    protected AnimalIDInfo animalIDInfo = new AnimalIDInfo();
+  
+    public void SetAnimalIDInfo(int idNum, string owner) {
+        animalIDInfo.IDNum = idNum;
+        animalIDInfo.Owner = owner;
+    }
+}
+
+class AnimalIDInfo {
+    public int IDNum { get; set; } = 0;
+    public string Owner { get; set; } = "No Owner";
 }
 ```
 
