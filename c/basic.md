@@ -351,7 +351,7 @@ class AnimalIDInfo {
 
 ```csharp
 class Animal {
-  public new void MakeSound() {
+  public void MakeSound() {
     Console.WriteLine($"{Name} says {Sound}");
 }
 
@@ -363,6 +363,9 @@ Animal spot = new Dog() { Name = "Spot", Sound = "Wooooff", Sound2 = "Geerrrr" }
 spot.makeSound() // spot says Wooooff (without the sound2)
 
 // With polymorphism with virtual and override
+// This is an example of how Polymorphism allows a subclass to override a method
+// in the super class and even if the subclass is defined as the super class
+// type the correct method will be called
 class Animal {
   public virtual void MakeSound() {
     Console.WriteLine($"{Name} says {Sound}");
