@@ -378,6 +378,24 @@ class Dog : Animal {
 }
 
 spot.makeSound() // spot says Wooooff and Geerrrr
+
+// Another example of polymorphism
+abstract class Shape {} // abstract is a clss that you don't want to instantiate
+
+class Circle : Shape {}
+class Rectangle : Shape {} 
+
+Shape[] shapes = {new Circle(5), new Rectangle(4,5)};
+foreach(Shape s in shapes) {
+  Circle testCirc = s as Circle; // Use "as" to check if an object is of a specific type
+  if(testCirc == null) {
+    Console.WriteLine("This isn't a Circle");
+  }
+  if(s is Circle) { // Use "is" to check the data type
+    Console.WriteLine("This isn't a Rectangle");
+  }
+}
+
 ```
 
 **List, Dictionary**
