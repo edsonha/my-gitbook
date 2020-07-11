@@ -347,6 +347,36 @@ class AnimalIDInfo {
 }
 ```
 
+**Polymorphism**
+
+```csharp
+class Animal {
+  public new void MakeSound() {
+    Console.WriteLine($"{Name} says {Sound}");
+}
+
+// You can define 2 Animal objects but have one actually be a Dog type. 
+Animal monkey = new Animal() { Name = "Happy", Sound = "Eeeeee" };
+ 
+Animal spot = new Dog() { Name = "Spot", Sound = "Wooooff", Sound2 = "Geerrrr" };
+
+spot.makeSound() // spot says Wooooff (without the sound2)
+
+// With polymorphism with virtual and override
+class Animal {
+  public virtual void MakeSound() {
+    Console.WriteLine($"{Name} says {Sound}");
+}
+
+class Dog : Animal {
+  public override void MakeSound() {
+    Console.WriteLine($"{Name} says {Sound} and {Sound2}");
+  }
+}
+
+spot.makeSound() // spot says Wooooff and Geerrrr
+```
+
 **List, Dictionary**
 
 ```csharp
