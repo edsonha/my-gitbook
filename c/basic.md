@@ -293,6 +293,28 @@ UsefulTools.SayHi("Ben")
 // So you can just call it from the class without creating an object
 ```
 
+**Inner Class**
+
+```csharp
+ // You can create inner classes that are normally helper classes for the outer 
+ // class because it can access private members of the outer class
+ class Animal {
+   public class AnimalHealth {
+     public bool HealthyWeight(double height, double weight) {
+       double calc = height / weight;
+       if ((calc >= .18) && (calc <= .27)) {
+         return true;
+       }
+       else return false;
+     }
+   }
+ }
+ 
+Animal.AnimalHealth getHealth = new Animal.AnimalHealth();
+ 
+Console.WriteLine("Is my animal healthy : {0}", getHealth.HealthyWeight(11, 46));
+```
+
 **Inheritance - Is-A relationship \(Dog Class is Animal Class\)**
 
 ```csharp
