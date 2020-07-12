@@ -398,14 +398,49 @@ foreach(Shape s in shapes) {
 
 ```
 
-**List, Dictionary**
+**List, Dictionary, Tuple**
 
 ```csharp
-//Array with dynamic size use List and it can only consist of one data type
+// Array with dynamic size use List and it can only consist of one data type
 List <int> numbers = new List<int> ();
+number.Add(1); // OK
+number.Add("Hello"); // Not OK
 
-Dictionary<string, int> prices = new Dictionary<string, int> (5);
+// Dictionary<TKey, TValue>
+Dictionary<string, int> myDictionary = new Dictionary<string, int>();
+myDictionary.Add("a", 100);
+myDictionary.Add("b", 200);
+Console.WriteLine(myDictionary["a"]); // 100
 
+// Tuple, carry different type of data 
+public Tuple<string, int> Math(int a, int b)
+{
+	string c = "Hello World";
+	int d = a * b;
+	return Tuple.Create(c, d);
+}
+static void Main(string[] args)
+{
+	Program p = new Program();
+	var obj = p.Math(10, 20);
+	Console.WriteLine(obj.Item1); // Hello World
+	Console.WriteLine(obj.Item2); // 200
+}
+
+// New way to create tuple
+public (string Hello, int Multiply) Math(int a, int b)
+{
+	string c = "Hello World";
+	int d = a * b;
+	return (c, d);
+}
+static void Main(string[] args)
+{
+	Program p = new Program();
+	var obj = p.Math(10, 5);
+	Console.WriteLine(obj.Hello);
+	Console.WriteLine(obj.Multiply);
+} 
 ```
 
 **Enum**
