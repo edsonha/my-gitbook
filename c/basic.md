@@ -401,7 +401,7 @@ foreach(Shape s in shapes) {
 **List, Dictionary**
 
 ```csharp
-//Array with dynamic size use List
+//Array with dynamic size use List and it can only consist of one data type
 List <int> numbers = new List<int> ();
 
 Dictionary<string, int> prices = new Dictionary<string, int> (5);
