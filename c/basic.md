@@ -509,6 +509,14 @@ Console.WriteLine(Utility.CompareValues(10, "Hello"));		 // FALSE
 Console.WriteLine(Utility.CompareTypes("World", "Hello")); // TRUE
 ```
 
+**Dependency Injection - Add Singleton, Add Scoped and Add Transient**
+
+| **Service Type** | In the scope of a given HTTP request | Across different HTTP request |
+| :--- | :--- | :--- |
+| Scoped Service | Same Instance | New Instance |
+| Singleton Service | Same Instance | Same Instance |
+| Transient Service | New Instance | New Instance |
+
 **Defensive Programming - Mosh**
 
 ```csharp
