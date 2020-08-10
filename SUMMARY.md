@@ -9,6 +9,7 @@
 * [Spread Syntax and Rest Parameters](javascript/spread-syntax-and-rest-parameters.md)
 * [Typescript](javascript/typescript/README.md)
   * [Examples of Types](javascript/typescript/examples-of-types.md)
+  * [React Typescript](javascript/typescript/react-typescript.md)
 * [This](javascript/this.md)
 * [Dot Notation vs Bracket Notation](javascript/dot-notation-vs-bracket-notation.md)
 * [Shallow vs Deep Clone](javascript/shallow-vs-deep-clone.md)
