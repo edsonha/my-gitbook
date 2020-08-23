@@ -16,6 +16,7 @@
 
 ## C\#
 
+* [Project Note](c/project-note.md)
 * [Basic](c/basic.md)
 * [Shortcut and Debugging](c/shortcut.md)
 
