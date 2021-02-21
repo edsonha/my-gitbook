@@ -13,6 +13,7 @@
 * [This](javascript/this.md)
 * [Dot Notation vs Bracket Notation](javascript/dot-notation-vs-bracket-notation.md)
 * [Shallow vs Deep Clone](javascript/shallow-vs-deep-clone.md)
+* [New ES Edition](javascript/new-es-edition.md)
 
 ## C\#
 
