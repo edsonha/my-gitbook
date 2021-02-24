@@ -5,6 +5,7 @@
 
 ## JAVASCRIPT
 
+* [Promise](javascript/promise.md)
 * [Destructuring](javascript/destructuring.md)
 * [Spread Syntax and Rest Parameters](javascript/spread-syntax-and-rest-parameters.md)
 * [Typescript](javascript/typescript/README.md)
