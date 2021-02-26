@@ -41,3 +41,10 @@ console.log(baz2);
 // expected output: 42
 ```
 
+Globalthis
+
+```text
+globalThis is the universal that was previously use in browser as (window. ) 
+and in terminal as (global. )
+```
+
