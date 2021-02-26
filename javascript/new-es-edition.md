@@ -48,3 +48,9 @@ globalThis is the universal that was previously use in browser as (window. )
 and in terminal as (global. )
 ```
 
+type:module 
+
+```text
+put type:module inside package.json to use import, export syntax in node
+```
+
