@@ -2,6 +2,10 @@
 
 * [My GitBook](README.md)
 * [Miscellaneous](miscellaneous.md)
+* [Project](project/README.md)
+  * [Backend](project/backend.md)
+  * [e2e](project/e2e/README.md)
+    * [fragments](project/e2e/fragments.md)
 
 ## JAVASCRIPT
 
