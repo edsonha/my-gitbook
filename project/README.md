@@ -1,12 +1,10 @@
 # Project
 
-### Dotnet Core
+### CBI v3
 
-.First \(List\) is similar to array\[0\]
-
-.FindAll \(List\) and .Where \(List and Dictionary\) is similar to .Filter
-
-.Contains\(List\) is similar to .Includes
-
-.Select \(Dictionary\) is similar to .Map =&gt; project each element of a sequence into a new form
+* Streamline amendment process
+* No structure / guiding principle on what to add / remove conditions
+* Introduce structured / template of conditions for automation. In the past, the conditions are freehand text of conditions
+* No authority to guide how the conditions are written
+* Change of activity A =&gt; B where the business activity no longer relevant does not need to "formal amendment process
 
