@@ -6,6 +6,7 @@
   * [Rider and Intellij](project/rider-and-intellij.md)
   * [Code](project/code.md)
   * [Frontend](project/frontend/README.md)
+    * [Condition](project/frontend/condition.md)
     * [AddConditionModalDialog](project/frontend/addconditionmodaldialog.md)
   * [Backend](project/backend.md)
   * [e2e](project/e2e/README.md)
