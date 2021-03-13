@@ -2,11 +2,15 @@
 
 ### CBI v3
 
-* Streamline amendment process
-* No structure / guiding principle on what to add / remove conditions
+* Streamline \(decrease\) amendment process
 * Introduce structured / template of conditions for automation. In the past, the conditions are freehand text of conditions
-* No authority to guide how the conditions are written
+* No authority / guiding principle to guide how the conditions are written
 * Change of activity A =&gt; B where the business activity no longer relevant does not need to "formal amendment process
+* G's idea is to split condition into 2 part: fixed and free-hand text
+* I's idea is similar to v2, but more of identification which is important and which is not
+* Goal of ZeroOps:
+* a\) We focus on conditions and OIC focus more on project and company assessment. 
+* b\) Focus on automation of SI and more human touch on Non-SI 
 
 ### CBI
 
@@ -14,6 +18,8 @@
 * Fixing the text saves you time from having to check for formatting issues in the Preview mode or Letter of Award.
 * Translate project interests into fixed, clear language
 * Ensure conditions are verifiable, and ultimately serves the scheme objectives.
+* Standard Incentive \(SI\) is fixed regardless of the achievement
+* Regular Incentive \(Non-SI\) is tiered according to the achievement
 
 ### What is Condition
 
