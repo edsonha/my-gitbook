@@ -9,5 +9,5 @@
 </ItemGroup>
 ```
 
-
+3. Now our API project needs to be hosted and dot net comes with a Web server called Kestrel that's going to host our API application and that's responsible for running it and serving it over 5000 on localhost.
 
