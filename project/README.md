@@ -87,11 +87,16 @@ Element has Edit and Preview Mode. When they load existing application, default 
 
 **Tranche-template API**
 
--        Used when creating new tranche
+-        Used when creating new tranche \(Updated - no Tranche-template API is called when creating a new tranche, as there is no default preamble and condition in the subsequent trance. So Element, just refresh the widget\)
 
 -        Used when creating new application
 
 We are not sure what they do with the data \(assume it is saved in the database\)
 
 We act as API Proxy to bypass the authentication and authorization.
+
+**Purging**
+
+* scheme-cutover =&gt; scheme and the onboard date
+* valid-application =&gt; return application under the scheme and the date
 
