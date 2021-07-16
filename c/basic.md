@@ -20,6 +20,18 @@ Method override:
 when you replace a method
 ```
 
+**Verbatim String**
+
+```csharp
+// verbatim ignore \n
+Console.WriteLine(@"you \n have no power here");
+// good example is 
+// Console.WriteLine(@"C:\User\Admin\Doc\Super Cool.png");
+// without verbatim, it will escape due to \ and give error
+
+Console.WriteLine("you \n have power here");
+```
+
 **Null**
 
 ```csharp
