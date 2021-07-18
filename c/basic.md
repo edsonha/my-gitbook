@@ -20,6 +20,31 @@ Method override:
 when you replace a method
 ```
 
+**TryGetValue**
+
+```csharp
+if (!xlRow.Cell(SchemesExcelColumn.Version).TryGetValue(out int version))
+{
+    version = 1;
+}
+// If successfull, you get version. If not, you get version = 1 as default
+            
+       
+if (results.TryGetValue(conditionBankId, out var conditionTemplateDtos))
+{
+    conditionTemplateDtos.Add(conditionTemplateDto);
+}
+else
+{
+    results.Add(conditionBankId, 
+    new List<ConditionTemplateDto> {conditionTemplateDto});
+}
+// If successful of retrieving the conditionBankId (key) in RESULTS,
+// you out the list of conditionTemplateDtos and add the conditionTemplateDto
+// If fail, you add the RESULTS with conditionBankId as key 
+// and initiliaze the new list as value
+```
+
 **Verbatim String**
 
 ```csharp

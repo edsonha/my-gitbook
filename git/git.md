@@ -36,3 +36,14 @@ To push to the new branch:
 $ git push origin "x-branch"
 ```
 
+Git Branch Strategy
+
+```text
+If your commit in your branch is old against master branch
+git checkout master
+git pull master
+git checkout "your branch"
+git rebase master
+git push --force 
+```
+
