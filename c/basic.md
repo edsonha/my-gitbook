@@ -574,3 +574,5 @@ if (list == null)
 }
 ```
 
+Different type of access modifier: private, public, protected and internal. [`Link`](https://code-maze.com/csharp-basics-access-modifiers/)\`\`
+
