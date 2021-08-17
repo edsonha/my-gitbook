@@ -18,6 +18,9 @@ When you have different versions of method
 
 Method override:
 when you replace a method
+
+Generic can only store one type
+Non generic can store many types
 ```
 
 **TryGetValue**
