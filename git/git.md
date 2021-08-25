@@ -45,5 +45,7 @@ git pull master
 git checkout "your branch"
 git rebase master
 git push --force 
+
+You can merge request by checking your branch and click the merge request
 ```
 
