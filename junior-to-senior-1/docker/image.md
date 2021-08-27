@@ -1,7 +1,7 @@
 # Docker Command
 
 ```bash
-docker run
+docker run redis
 // Run a container from an image with the latest version
 
 docker run redis:4.0 
