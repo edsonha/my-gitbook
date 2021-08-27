@@ -2,9 +2,12 @@
 
 **Why do you need Docker?**
 
-Modern application has various different technologies and they does not stand still \(require constant upgrade\) which requires different dependencies to the underlying OS and compatibility between these services and their library and dependencies. AVOID THE MATRIX FROM HELL!!!
+1. Modern application has various different technologies and they does not stand still \(require constant upgrade\) which requires different dependencies to the underlying OS and compatibility between these services and their library and dependencies. AVOID THE MATRIX FROM HELL!!!
+2. Another reason is we need to guarantee that the project can run on on a different machine / environment \(test, UAT, prod\) without any errors. And this is where containers come in.
 
-The idea is to have project run on a different machine / environment without any errors. And this is where containers come in.
+**What can Docker do?**
+
+Able to run each component in a separate container with its own dependencies and its own libraries all on the same VM and the OS but within separate environments or containers \(but on same OS kernel\)
 
 Companies uses micro-services and have their products composed of multiple layers. These layers can be considered services, each with their own container doing its own thing and communicating with each other to make the whole system work.
 
