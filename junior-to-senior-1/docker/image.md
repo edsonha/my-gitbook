@@ -11,6 +11,7 @@ docker run -it -d ubuntu
 
 root@dc43c98b31c9:/#
 // -d means will run in detach mode and let the container run in the background
+// the opposite of detach is docker attach ${containerName}
 // -it for interactivity (prompt and waiting for STDIN)
 // And hash value that is generated randomly by docker to identify which 
 // containers is which.
