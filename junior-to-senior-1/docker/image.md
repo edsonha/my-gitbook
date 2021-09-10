@@ -7,7 +7,7 @@ docker run redis
 docker run redis:4.0 
 // Add a tag to run a specific version
 
-docker run -it -d ubuntu
+docker run -it -d ubuntu bash
 
 root@dc43c98b31c9:/#
 // -d means will run in detach mode and let the container run in the background
