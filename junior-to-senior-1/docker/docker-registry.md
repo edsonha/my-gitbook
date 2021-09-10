@@ -25,7 +25,7 @@ Now that you have your own custom registry running at port 5000 on the docker ho
 ```text
 docker image tag my-image localost:5000/my-image
 Or
-docker build . -t mmumshad/my-simple-webapp
+docker build . -t ${docker_username}/my-simple-webapp
 ```
 
 And then I can push my image to my local private custom registry using command docker push
@@ -33,7 +33,7 @@ And then I can push my image to my local private custom registry using command d
 ```text
 docker push localhost:5000/my-image
 OR
-doker push mmumshad/my-simple-webapp
+doker push ${docker_username}/my-simple-webapp
 (May need to login using "docker login" to push to docker hub)
 ```
 
