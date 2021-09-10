@@ -49,6 +49,14 @@ docker logs ${container name or container id}
 docker run -e APP_COLOR=green simple-webapp-color
 docker run -e APP_COLOR=blue simple-webapp-color
 // -e for environment variable
+
+docker run -p 38282:8080 --name blue-app -e APP_COLOR=blue -d kodekloud/simple-webapp
+// 8080 to 38282
+// name container: blue-app
+// env APP_COLOR=blue
+// detached mode of images kodekloud/simple-webapp
+// To know the env field from within a blue-app container,
+// run docker exec -it blue-app env
 ```
 
 ```bash
