@@ -41,6 +41,7 @@ docker pull ${image name}
 
 docker inspect ${container name or container id}
 // Give more detail on specific container in json format
+// Can be used also to inspect Env Variable used to run the container
 
 docker logs ${container name or container id}
 // logs for container running in the background (detached mode)
